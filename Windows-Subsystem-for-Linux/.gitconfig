@@ -1,0 +1,39 @@
+[user]
+    name = hisk
+    email = hisk@xxx.xxx
+[color]
+    ui = auto
+[diff]
+    tool = WinMerge
+[difftool]
+    prompt = false
+[difftool "WinMerge"]
+    path = '/mnt/c/tools/WinMerge/WinMergeU.exe'
+    cmd = \"/mnt/c/tools/WinMerge/WinMergeU.exe\" -e -r -u -x -wl -wr -dl \"a/$MERGED\" -dr \"b/$MERGED\" \"`echo ${LOCAL%/} | sed -e 's|^\\(/mnt/\\([a-z]\\)\\)\\(.*\\)|\\U\\2:\\E\\3|' -e 's|/|\\\\\\\\|g'`\" \"`echo ${REMOTE%/} | sed -e 's|^\\(/mnt/\\([a-z]\\)\\)\\(.*\\)|\\U\\2:\\E\\3|' -e 's|/|\\\\\\\\|g'`\"
+    trustExitCode = false
+[merge]
+    tool = WinMerge
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "WinMerge"]
+    path = '/mnt/c/tools/WinMerge/WinMergeU.exe'
+    # cmd = \"/mnt/c/tools/WinMerge/WinMergeU.exe\" -e -u \"`echo ${MERGED%/} | sed -e 's|^\\(/mnt/\\([a-z]\\)\\)\\(.*\\)|\\U\\2:\\E\\3|' -e 's|/|\\\\\\\\|g'`\"
+    cmd = \"/mnt/c/tools/WinMerge/WinMergeU.exe\" -e -u \"`echo ${LOCAL%/} | sed -e 's|^\\(/mnt/\\([a-z]\\)\\)\\(.*\\)|\\U\\2:\\E\\3|' -e 's|/|\\\\\\\\|g'`\" \"`echo ${MERGED%/} | sed -e 's|^\\(/mnt/\\([a-z]\\)\\)\\(.*\\)|\\U\\2:\\E\\3|' -e 's|/|\\\\\\\\|g'`\" \"`echo ${REMOTE%/} | sed -e 's|^\\(/mnt/\\([a-z]\\)\\)\\(.*\\)|\\U\\2:\\E\\3|' -e 's|/|\\\\\\\\|g'`\"
+    # cmd = \"C:/tools/WinMerge/WinMergeU.exe\" -e -u -wl -wr \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
+    trustExitCode = false
+[alias]
+    windiff = difftool -y -d --no-symlinks -t WinMerge
+    winmerge = mergetool -y -t WinMerge
+    graph = log --graph --numstat --date=relative --pretty=format:\"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset %Cgreen(%cr)\"
+[core]
+    whitespace = cr-at-eol
+	editor = /usr/bin/vi
+[push]
+    default = matching
+
+[url "github.com:"]
+    InsteadOf = https://github.com/
+    InsteadOf = git@github.com:
+
+
