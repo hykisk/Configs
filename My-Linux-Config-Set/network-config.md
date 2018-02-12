@@ -1,0 +1,94 @@
+# 仮想環境構築(CentOS Minimal 7.x)
+
+## CentOSのインストール前
+
+VirtualBoxにCentOSをインストールする前に、  
+ネットワークアダプタにNAT、HostOnlyNetWorkを設定しておく。  
+
+## CentOSのインストール後
+
+ifcfg-eth0(NAT)、ifcfg-eth1(ホストオンリーネットワーク)を編集する。
+
+## 同一LAN内からアクセスできるようする手順。（次のことができればOK。）
+
+- GuestOSからインターネットへの接続確認。
+```
+$ curl http://www.example.com/
+```
+- HostOSからsshできればOK。
+```
+$ ssh -l root@localhost -p 1022
+```
+
+- 同一LAN上の端末からsshできればOK。
+```
+$ ssh -l root@192.168.xxx.xxx -p 1022
+```
+
+### 1.NATネットワーク設定の変更点
+
+```
+$ vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
+
+TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=none #← 変更元dhcp
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=enp0s3
+UUID=xxx
+DEVICE=enp0s3
+ONBOOT=yes #← 変更元no
+IPADDR=10.0.2.25 #← 追加
+NETMASK=255.255.255.0 #← 追加
+GATEWAY=10.0.2.2 #← 追加
+DNS1=8.8.8.8 #← 追加
+```
+
+### 2.ホストオンリーネットワーク設定の変更点
+
+```
+$ vi /etc/sysconfig/network-scripts/ifcfg-enp0s8
+
+TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=none  #← 変更元dhcp
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=enp0s8
+UUID=yyy
+DEVICE=enp0s8
+ONBOOT=yes #← 変更元no
+IPADDR=192.168.56.101 #← 追加
+NETMASK=255.255.255.0 #← 追加
+DNS1=8.8.8.8 #← 追加
+```
+
+### 3.シャットダウン
+
+```
+shutdown -h now
+```
+
+### 4.ポートフォワーディング
+
+- 名前：Rule1
+- プロトコル：TCP
+- ホストIP：192.168.100.101
+- ホストポート：1022
+- ゲストIP：10.0.2.25
+- ゲストポート：22
+
+以上
