@@ -9,7 +9,7 @@ $ svnadmin create /home/svn/repos/sample
 $ svn mkdir file://localhost/home/svn/repos/sample/trunk -m "create"
 $ svn mkdir file://localhost/home/svn/repos/sample/branches -m "create"
 $ svn mkdir file://localhost/home/svn/repos/sample/tags -m "create"
-$ svn mkdir -p /tmp/src
+$ mkdir -p /tmp/src
 ```
 
 ## クライアント
