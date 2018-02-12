@@ -35,6 +35,7 @@ vi /etc/httpd/conf/httpd.conf
 </Location>
 ##################################################
 $ chown -R apache:apache /home/svn/repos/sample
+$ systemctl restart httpd.service
 ```
 
 ## クライアントからチェックアウトできればOK。
