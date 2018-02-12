@@ -1,0 +1,23 @@
+#http://ciembor.github.io/4bit/#
+#vi ~/.minttyrc
+#paste this color scheme.
+
+BackgroundColour=27,54,80
+ForegroundColour=229,238,246
+CursorColour=229,238,246
+Black=7,7,7
+BoldBlack=38,38,38
+Red=207,151,98
+BoldRed=228,197,168
+Green=98,207,151
+BoldGreen=168,228,197
+Yellow=154,207,98
+BoldYellow=199,228,168
+Blue=151,98,207
+BoldBlue=197,168,228
+Magenta=207,98,154
+BoldMagenta=228,168,199
+Cyan=98,154,207
+BoldCyan=168,199,228
+White=217,217,217
+BoldWhite=246,246,246
