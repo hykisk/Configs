@@ -25,6 +25,5 @@
 [mergetool "WinMerge"]
     cmd = \"C:/tools/WinMerge/WinMergeU.exe\" -e -u \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
     trustExitCode = false
-
 [core]
     whitespace = cr-at-eol
