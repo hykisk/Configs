@@ -22,7 +22,7 @@
     prompt = false
     keepBackup = false
 [mergetool "WinMerge"]
-    cmd = \"C:/tools/WinMerge/WinMergeU.exe\" \"$MERGED\"
+    cmd = \"C:/tools/WinMerge/WinMergeU.exe\" -e -u \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
     trustExitCode = false
 
 [alias]
