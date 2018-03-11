@@ -1,13 +1,13 @@
 [user]
-	name = hisk
-	email = hisk@xxx.xxx
+    name = hisk
+    email = hisk@xxx.xxx
 [color]
-	ui = auto
+    ui = auto
 [alias]
-	graph = log --graph --numstat --date=relative --pretty=format:\"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset %Cgreen(%cr)\"
-	grep = grep --color=always
-        windiff = difftool -y -d -t WinMerge
-        winmerge = mergetool -y -t WinMerge
+    graph = log --graph --numstat --date=relative --pretty=format:\"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset %Cgreen(%cr)\"
+    grep = grep --color=always
+    windiff = difftool -y -d -t WinMerge
+    winmerge = mergetool -y -t WinMerge
 [diff]
     tool = WinMerge
 [difftool]
