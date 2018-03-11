@@ -6,7 +6,8 @@
 [alias]
 	graph = log --graph --numstat --date=relative --pretty=format:\"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset %Cgreen(%cr)\"
 	grep = grep --color=always
-
+        windiff = difftool -y -d -t WinMerge
+        winmerge = mergetool -y -t WinMerge
 [diff]
     tool = WinMerge
 [difftool]
@@ -25,8 +26,5 @@
     cmd = \"C:/tools/WinMerge/WinMergeU.exe\" -e -u \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
     trustExitCode = false
 
-[alias]
-    windiff = difftool -y -d -t WinMerge
-    winmerge = mergetool -y -t WinMerge
 [core]
     whitespace = cr-at-eol
