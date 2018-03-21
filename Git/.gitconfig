@@ -16,7 +16,6 @@
     path = C:/tools/WinMerge/WinMergeU.exe
     cmd = \"C:/tools/WinMerge/WinMergeU.exe\" -e -r -u -x -wl -wr -dl \"a/$MERGED\" -dr \"b/$MERGED\" \"$LOCAL\" \"$REMOTE\"
     trustExitCode = false
-
 [merge]
     tool = WinMerge
 [mergetool]
@@ -27,3 +26,5 @@
     trustExitCode = false
 [core]
     whitespace = cr-at-eol
+    editor = /usr/bin/vi
+    pager = less -S
