@@ -36,7 +36,7 @@ $ git config --global core.editor /usr/bin/vi
 ```
 vi ~/.ssh/known_hosts
 #キャッシュを消す。
-ssh-keygen -t rsa -f id_rsa_git
+ssh-keygen -t rsa -f ~/.ssh/id_rsa_git
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa_git
 vi ~/.ssh/config
