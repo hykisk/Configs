@@ -8,6 +8,8 @@
     grep = grep --color=always
     windiff = difftool -y -d -t WinMerge
     winmerge = mergetool -y -t WinMerge
+    svn-ref = "!f() { ret=''; for rev in $@; do ret=${ret}' '`git log --grep "git-svn-id.*@${rev}" --pretty=%H;`; done; echo $ret; }; f"
+    log = log --date=local
 [diff]
     tool = WinMerge
 [difftool]

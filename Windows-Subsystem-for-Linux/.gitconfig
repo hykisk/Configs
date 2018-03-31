@@ -26,6 +26,8 @@
     windiff = difftool -y -d --no-symlinks -t WinMerge
     winmerge = mergetool -y -t WinMerge
     graph = log --graph --oneline --decorate=full --date=relative --format=\"%C(yellow)%h%C(reset) %C(magenta)[%ad]%C(reset)%C(auto)%d%C(reset) %s %C(cyan)@%an%C(reset)\"
+    #svn-ref = "!f() { ret=''; for rev in $@; do ret=${ret}' '`git log --grep "git-svn-id.*@${rev}" --pretty=%H;`; done; echo $ret; }; f"
+    log = log --date=local
 [core]
     whitespace = cr-at-eol
     editor = /usr/bin/vi
