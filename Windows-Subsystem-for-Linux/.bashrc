@@ -92,6 +92,9 @@ alias l='ls -CF'
 stty stop undef
 stty start undef
 
+# find command. Exclude target directory.
+function find { $( which find ) "$@"  -not -iwholename '*/.git/*'  ; }
+
 # git
 source ~/.git-prompt.sh
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '

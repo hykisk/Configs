@@ -5,13 +5,13 @@ alias grep='grep --color=always'
 #スクリーンロックを解除して前方検索(ctl-s)出来るように設定※スクリーンロックを未定義にする。
 $ stty stop undef
 ```
-## .gitconfig
-~/.gitconfigを差し替える。
-- 確認
-git config -l
+## ~/.gitconfig
+.gitconfigを差し替える。
+
+## ~/.bash_profile
+必要な箇所のみ書き換える。  
 
 ## 設定(minimal)
-
 
 ```
 $ git config --global user.name "hisk"
