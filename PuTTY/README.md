@@ -1,7 +1,7 @@
 Solarized - PuTTY settings
 ==========================
 
-### İ’è
-ƒtƒ@ƒCƒ‹’†‚Ì Solarized%20Dark(Solarized%20Light) •”•ª‚ğputty‚ÌƒZƒbƒVƒ‡ƒ“–¼‚ÉC³‚µ‚Äƒ_ƒuƒ‹ƒNƒŠƒbƒNB
+### è¨­å®š
+ãƒ•ã‚¡ã‚¤ãƒ«ä¸­ã® Solarized%20Dark(Solarized%20Light) éƒ¨åˆ†ã‚’puttyã®ã‚»ãƒƒã‚·ãƒ§ãƒ³åã«ä¿®æ­£ã—ã¦ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã€‚
 
 http://momota.github.io/blog/2013/08/22/solarized-putty/
