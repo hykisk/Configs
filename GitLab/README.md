@@ -25,7 +25,7 @@ $ sudo EXTERNAL_URL="http://XXX.com" yum install -y gitlab-ce
 
 ```
 $ vi /etc/gitlab/gitlab.rb
-  EXTERNAL_URL='http://XXX.com'
+  external_url='http://XXX.com'
 ```
 
 ```
