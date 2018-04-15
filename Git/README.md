@@ -16,11 +16,7 @@ $ stty stop undef
 ```
 $ git config --global user.name "hisk"
 $ git config --global user.email hisk@xxx.xxx
-$ git config --global alias.graph 'log --graph --numstat --date=relative --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset %Cgreen(%cr)"'
 $ git config --global push.default matching
-$ which vi
-$ git config --global core.editor /usr/bin/vi
-
 ```
 
 ## 毎回パスワード入れないように。（github使用時）
