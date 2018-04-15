@@ -11,7 +11,7 @@
     svn-ref = "!f() { ret=''; for rev in $@; do ret=${ret}' '`git log --grep "git-svn-id.*@${rev}" --pretty=%H;`; done; echo $ret; }; f"
     log = log --date=local
 [diff]
-    tool = WinMerge
+    tool = vimdiff
 [difftool]
     prompt = false
 [difftool "WinMerge"]
@@ -19,7 +19,7 @@
     cmd = \"C:/tools/WinMerge/WinMergeU.exe\" -e -r -u -x -wl -wr -dl \"a/$MERGED\" -dr \"b/$MERGED\" \"$LOCAL\" \"$REMOTE\"
     trustExitCode = false
 [merge]
-    tool = WinMerge
+    tool = vimdiff
 [mergetool]
     prompt = false
     keepBackup = false
@@ -28,5 +28,5 @@
     trustExitCode = false
 [core]
     whitespace = cr-at-eol
-    editor = /usr/bin/vi
+    editor = /usr/bin/vim
     pager = less -S
