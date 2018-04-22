@@ -41,8 +41,6 @@ Host github.com
     HostName github.com
     IdentityFile ~/.ssh/id_rsa_git
 #######################################
-chmod 600 ~/.ssh/id_rsa_git
-chmod 600 ~/.ssh/id_rsa_git.pub
 chmod 600 ~/.ssh/config
 ```
 
