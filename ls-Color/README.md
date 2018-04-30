@@ -5,6 +5,6 @@
 
 ```
 $ mkdir ~/.dircolors
-$ cp -p ~/Configs/ls-Color/dircolors.ansi-dark ~/.colors
-$ eval `dircolors ~/.colors/dircolors.ansi-dark`
+$ cp -p ~/Configs/ls-Color/dircolors.ansi-dark ~/.dircolors
+$ eval `dircolors ~/.dircolors/dircolors.ansi-dark`
 ```
