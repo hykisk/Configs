@@ -3,8 +3,10 @@
 
 [参考](https://about.gitlab.com/installation/#centos-7)
 
-- ifcfg-enp0s9  
-（自動取得をやめて）IPを固定する。
+- VM上に構築する場合、DHCPをやめてIPを固定する。
+  - ifcfg-enp0s3
+  - ifcfg-enp0s8
+
 
 - インストール手順
 ```
