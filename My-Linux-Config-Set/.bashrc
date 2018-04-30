@@ -25,6 +25,9 @@ alias vi='vim'
 stty stop undef
 stty start undef
 
+# ls Colors
+eval `dircolors ~/.dircolors/dircolors.ansi-light` # or dark
+
 # find command. Exclude target directory.
 function find { $( which find ) "$@"  -not -iwholename '*/.git/*'  ; }
 
