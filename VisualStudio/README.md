@@ -8,6 +8,8 @@
   - MeiryoKe_Consele (or MeiryoKe_Gothic)
 
 - Extentions
+  - VSColorOutput
+  - Git Diff Margin
   - Hide Main Menu
   - Xaml Styler
   - Text Sharp
