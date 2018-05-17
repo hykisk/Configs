@@ -140,14 +140,14 @@ http://momota.github.io/blog/2013/08/22/solarized-putty/
 ## sakura
 - - -
 
-- cmd.exe
-
 ```
-cp -ip Configs\keyword\* tools\sakura\keyword
-cp -ip Configs\CSharp-highlight\* tools\sakura\CSharp
+$ cp -ip ./Configs/sakura/keyword/* /c/tools/sakura/keyword
+$ mkdir /c/tools/sakura/CSharp
+$ cp -ip ./Configs/sakura/CSharp-highlight/* /c/tools/sakura/CSharp
 ```
 
-- 設定 > インポート .iniを指定する。
+- 設定 > タイプ別設定一覧 > インポート > Csharp.iniを指定する。
+
 
 </br>
 
