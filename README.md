@@ -185,12 +185,11 @@ $ ln -s ~/Configs/Vim/solarized.vim ~/.vim/colors/solarized.vim
 $ ln -s ~/Configs/Vim/.vimrc ~/.vimrc
 ```
 
-- `.vimrc`に追記
+- Clip Board 有効化
 
 ```
-syntax enable
-set background=dark
-colorscheme solarized>
+vim --version | grep clipboard
+set clipboard=unnamed
 ```
 
 - `.bashrc`に追記
