@@ -25,10 +25,10 @@ $ lxrun /install
 $ .\colortool.exe solarized_dark
 ```
 
-- 視認性が低いところは手動で。  
+- Color Scheme  
+`./cmd-color-scheme.reg`    
 
-<img src="./img/wsl_color1.png" alt="wsl_color1">  
-<img src="./img/wsl_color2.png" alt="wsl_color2">  
+![color](./img/cmd-color-scheme.png)
 
 ## パッケージ更新
 - - -
