@@ -12,6 +12,9 @@
 $ lxrun /install
 ```
 
+## cmdの管理者で起動
+- ~~win-r `cmd` shift-Enter~~ `win cmd` Right-Click Administrator
+
 ## 色変更
 - - -
 
@@ -29,6 +32,10 @@ $ .\colortool.exe solarized_dark
 `./cmd-color-scheme.reg`    
 
 ![color](./img/cmd-color-scheme.png)
+
+
+## バッファーサイズ
+![buffer-size](./img/cmd-buffer-size.png)
 
 ## パッケージ更新
 - - -
