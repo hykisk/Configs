@@ -63,14 +63,38 @@ $ sudo apt-get install build-essential
 
 ## Git
 - - -
+- ~~新しいものをインストール~~ 公式リポのバージョンは古い 
 
-### 新しいものをインストール
 ```
+$ sudo apt-get install apt-file
+$ sudo apt-file update
+$ sudo apt-file search add-apt-repository
+$ sudo apt-get install software-properties-common
+
+#非公式リポジトリの追加
+$ sudo add-apt-repository ppa:git-core/ppa
 $ sudo apt-get update
+$ sudo apt-get upgrade
+#gitのインストール
 $ sudo apt-get install git
-$ sudo apt install tig
+
+$ git --version
+```
+
+## tmux
+
+- ソースをコンパイルし、最新版を取得。
 
 ```
+$ sudo apt update 
+$ sudo apt install -y build-essential automake libevent-dev ncurses-dev
+$ mkdir -p ~/src
+$ mkdir -p ~/bin
+$ cd ~/src && git clone git@github.com:tmux/tmux.git
+$ cd ~/src/tmux && sh autogen.sh && ./configure && make 
+$ cp ~/src/tmux/tmux /usr/local/bin/
+```
+
 ### OS間のファイル区切り文字がちがいを解決
 
 1. 以下を.bashrcに追加
