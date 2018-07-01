@@ -2,6 +2,7 @@ set nocompatible
 
 " Screen display
 set cursorline
+set number
 
 " Cursor movement
 set sidescroll=1 " Move left and right scrolls one character at a time
