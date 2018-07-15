@@ -83,7 +83,7 @@ $ git --version
 
 ## tmux
 
-- ソースをコンパイルし、最新版を取得。
+- ソースをコンパイルし、最新版を取得。(GitHubにSSHキー登録済みであること)
 
 ```
 $ sudo apt update 
