@@ -22,6 +22,15 @@
   1. 演算子
   1. 現在の行を強調表示する。`前景色: 明るく` `背景色: 黒`
 
+## Tool > Option
+- Environment
+  - General  
+  Status Display: `off`
+- Text Editor  
+  - Display  
+  現在の行を強調表示する: `off`
+  - C#
+  Navigration Bar: `off`
 - Productivity Power Tools
   - `Custom Document Well` > `Advanced`
   Selected tab: `VS Colors`
