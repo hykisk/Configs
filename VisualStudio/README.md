@@ -1,39 +1,53 @@
-# VisualStudio(2015ˆÈ~)
+# VisualStudio(2015ä»¥é™)
 - - -
 
+
+### Font
+- Ricty Diminished
+- MeiryoKe_Consele (or MeiryoKe_Gothic)
+
 ### Extensions
+- File Path On Footer
+- VSColorOutput
+- Git Diff Margin
+- Hide Main Menu
+- Xaml Styler
+- Text Sharp
+  1. Text rendering mode : ClearType or Auto ON  
+  1. Text formatting mode : Display ON  
+  1. Text hinting mode : Auto ON  
+  1. Targets : Both ON  
+- Color Theme Editorï¼ˆè¦‹ã¥ã‚‰ã„æ™‚ã€Editor-Colorã‚’è¨­å®šã™ã‚‹ï¼‰  
+  1. å¼·èª¿è¡¨ç¤ºã•ã‚ŒãŸå‚ç…§
+  1. æ¼”ç®—å­
+  1. ç¾åœ¨ã®è¡Œã‚’å¼·èª¿è¡¨ç¤ºã™ã‚‹ã€‚`å‰æ™¯è‰²: æ˜ã‚‹ã` `èƒŒæ™¯è‰²: é»’`
 
-- Font
-  - Ricty Diminished
-  - MeiryoKe_Consele (or MeiryoKe_Gothic)
+- Productivity Power Tools
+  - `Custom Document Well` > `Advanced`
+  Selected tab: `VS Colors`
 
-- Extentions
-  - VSColorOutput
-  - Git Diff Margin
-  - Hide Main Menu
-  - Xaml Styler
-  - Text Sharp
-    1. Text rendering mode : ClearType or Auto ON  
-    1. Text formatting mode : Display ON  
-    1. Text hinting mode : Auto ON  
-    1. Targets : Both ON  
-  - Color Theme EditoriŒ©‚Ã‚ç‚¢Aè“®‚ÅˆÈ‰º‚ğs‚¤j  
-    1. ƒc[ƒ‹ > ƒIƒvƒVƒ‡ƒ“ > ƒtƒHƒ“ƒg‚ÆF > İ’è‚Ì•\¦[ƒeƒLƒXƒgƒGƒfƒBƒ^]  
-    1. ‹­’²•\¦‚³‚ê‚½QÆ
-    1. ‰‰Zq
+  - `Custom Document Well` > `General`  
+  Place tabs on the: `Left`  
+  Show Close button: `off`  
+  Color tabs by project: `on`  
+  
+  - `Quick Launch Tasks` ãŒåŒæ¢±ã•ã‚Œã¦ãªã‘ã‚Œã°åˆ¥é€”ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã€‚ctl-T,T,T
 
-- Shortcut [2010ˆÈ‘OƒVƒ‡[ƒgƒJƒbƒgİ’è alt-–îˆó](https://gist.github.com/masaru-b-cl/4378557)  
+  - Uninstall `Fix Mixed Tabs` at Visual Studio Extension.
+
+
+- Shortcut [2010ä»¥å‰ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆè¨­å®š alt-çŸ¢å°](https://gist.github.com/masaru-b-cl/4378557)  
 
 ```
 <UserShortcuts>
-    <RemoveShortcut Command="Tools.Switch" Scope="‘S‘Ì">Ctrl+0</RemoveShortcut>
-    <RemoveShortcut Command="{C9DD4A59-47FB-11D2-83E7-00C04F9902C1},306" Scope="‘S‘Ì">Ctrl+9</RemoveShortcut>
-    <Shortcut Command="Tools.Switch" Scope="‘S‘Ì">Ctrl+9</Shortcut>
-    <RemoveShortcut Command="Edit.MoveLineDown" Scope="‘S‘Ì">Ctrl+Shift+Alt+‰º–îˆó, Ctrl+Shift+Alt+‰ºˆó</RemoveShortcut>
-    <RemoveShortcut Command="Edit.MoveLineUp" Scope="‘S‘Ì">Ctrl+Shift+Alt+ã–îˆó, Ctrl+Shift+Alt+ãˆó</RemoveShortcut>
-    <RemoveShortcut Command="ProjectandSolutionContextMenus.Item.MoveDown" Scope="‘S‘Ì">Alt+‰ºˆó</RemoveShortcut>
-    <Shortcut Command="Edit.MoveLineDown" Scope="‘S‘Ì">Alt+‰º–îˆó</Shortcut>
-    <RemoveShortcut Command="ProjectandSolutionContextMenus.Item.MoveUp" Scope="‘S‘Ì">Alt+ã–îˆó</RemoveShortcut>
-    <Shortcut Command="Edit.MoveLineUp" Scope="‘S‘Ì">Alt+ã–îˆó</Shortcut>
+    <RemoveShortcut Command="Tools.Switch" Scope="å…¨ä½“">Ctrl+0</RemoveShortcut>
+    <RemoveShortcut Command="{C9DD4A59-47FB-11D2-83E7-00C04F9902C1},306" Scope="å…¨ä½“">Ctrl+9</RemoveShortcut>
+    <Shortcut Command="Tools.Switch" Scope="å…¨ä½“">Ctrl+9</Shortcut>
+    <RemoveShortcut Command="Edit.MoveLineDown" Scope="å…¨ä½“">Ctrl+Shift+Alt+ä¸‹çŸ¢å°, Ctrl+Shift+Alt+ä¸‹å°</RemoveShortcut>
+    <RemoveShortcut Command="Edit.MoveLineUp" Scope="å…¨ä½“">Ctrl+Shift+Alt+ä¸ŠçŸ¢å°, Ctrl+Shift+Alt+ä¸Šå°</RemoveShortcut>
+    <RemoveShortcut Command="ProjectandSolutionContextMenus.Item.MoveDown" Scope="å…¨ä½“">Alt+ä¸‹å°</RemoveShortcut>
+    <Shortcut Command="Edit.MoveLineDown" Scope="å…¨ä½“">Alt+ä¸‹çŸ¢å°</Shortcut>
+    <RemoveShortcut Command="ProjectandSolutionContextMenus.Item.MoveUp" Scope="å…¨ä½“">Alt+ä¸ŠçŸ¢å°</RemoveShortcut>
+    <Shortcut Command="Edit.MoveLineUp" Scope="å…¨ä½“">Alt+ä¸ŠçŸ¢å°</Shortcut>
 </UserShortcuts>
 ```
