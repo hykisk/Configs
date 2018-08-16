@@ -12,7 +12,8 @@
     cmd = \"/mnt/c/tools/WinMerge/WinMergeU.exe\" -e -r -u -x -wl -wr -dl \"a/$MERGED\" -dr \"b/$MERGED\" \"`echo ${LOCAL%/} | sed -e 's|^\\(/mnt/\\([a-z]\\)\\)\\(.*\\)|\\U\\2:\\E\\3|' -e 's|/|\\\\\\\\|g'`\" \"`echo ${REMOTE%/} | sed -e 's|^\\(/mnt/\\([a-z]\\)\\)\\(.*\\)|\\U\\2:\\E\\3|' -e 's|/|\\\\\\\\|g'`\"
     trustExitCode = false
 [merge]
-    tool = WinMerge
+    tool = vimdiff
+    # tool = WinMerge
 [mergetool]
     prompt = false
     keepBackup = false
