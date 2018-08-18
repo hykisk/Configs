@@ -41,3 +41,13 @@ function find { $( which find ) "$@"  -not -iwholename '*/.git/*'  ; }
 
 #. /usr/share/git-core/contrib/completion/git-prompt.sh
 #export PS1='\u@\h [\W $(__git_ps1)] \$ '
+
+# Share history for tmux
+function share_history {
+    history -a
+    history -c
+    history -r
+}
+PROMPT_COMMAND='share_history'
+shopt -u histappend
+

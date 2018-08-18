@@ -139,3 +139,13 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
+
+# Share history for tmux
+function share_history {
+    history -a
+    history -c
+    history -r
+}
+PROMPT_COMMAND='share_history'
+shopt -u histappend
+
