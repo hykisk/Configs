@@ -15,6 +15,8 @@
 | ctl-e | The location of the cursor is just as it is and I scroll down |
 | ctl-u | Move to screen up half page                                   |
 | ctl-d | Move to screen down half page                                 |
+| ctl-o | Previous cursor position from history                         |
+| ctl-i | Following cursor position from history                        |
 |       |                                                               |
 |       |                                                               |
 
@@ -45,6 +47,7 @@
 |  Key  | Discription                                              |
 | ----- | -------------------------------------------------------- |
 | v     | Selection mode                                           |
+| V     | Line selection mode                                      |
 | ctl-v | Rectangle selection mode (shift-i)Switch Insert mode.    |
 |       |                                                          |
 
@@ -86,6 +89,11 @@
 | P       | Paste                                     |
 | ctl-c   | (=ESC)Insert mode to cmd                  |
 | d i w   | Delete current word                       |
+|         |                                           |
+|         |                                           |
 
 ### Indent format  
 `:filetype indent on | setf html | normal gg=G`
+### show filepath
+`:echo expand("%:p")`
+
