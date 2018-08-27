@@ -64,7 +64,13 @@
 | s/foo/bar/g  | All in current line           |
 | %s/foo/bar/g | All in open file              |
 |              |                               |
-|              |                               |
+
+### Command history
+|     Key      | Discription           |
+| ------------ | --------------------- |
+| :{echo}<UP>  | Followup form histroy |
+|              |                       |
+|              |                       |
 
 ### Macro
 |        Key        | Discription  |
