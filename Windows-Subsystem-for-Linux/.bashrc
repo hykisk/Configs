@@ -96,9 +96,9 @@ stty start undef
 function find { $( which find ) "$@"  -not -iwholename '*/.git/*'  ; }
 
 # git
-source ~/.git-prompt.sh
+#source ~/.git-prompt.sh
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-export PS1='\u@\h [\W $(__git_ps1)] \$ '
+#export PS1='\u@\h [\W $(__git_ps1)] \$ '
 
 # replacement path Windows to Linux
 function winpath()
