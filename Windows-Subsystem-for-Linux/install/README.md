@@ -86,12 +86,20 @@ $ git --version
 - 最新版を使用するため、ソースを取得しコンパイルする。(GitHubにSSHキー登録済みであること)
 
 ```
-$ sudo apt update 
+$ dpkg -l | grep tmux
+# varsion x.x-xbuild1
+$ sudo apt update
+# 18/08/28 added for error of autogen.sh  
+$ sudo apt-get -y install pkg-config libtool
 $ sudo apt install -y build-essential automake libevent-dev ncurses-dev
 $ mkdir -p ~/src
 $ mkdir -p ~/bin
-$ cd ~/src && git clone git@github.com:tmux/tmux.git
-$ cd ~/src/tmux && sh autogen.sh && ./configure && make 
+$ cd ~/src
+$ git clone git@github.com:tmux/tmux.git
+$ cd ~/src/tmux
+$ sh autogen.sh
+$ ./configure
+$ make
 $ cp ~/src/tmux/tmux /usr/local/bin/
 ```
 
