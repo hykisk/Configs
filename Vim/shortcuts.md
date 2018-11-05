@@ -1,12 +1,12 @@
 # Vim shortcut
 
-### File operation
+## File operation
 | Key | Discription |
 | --- | ----------- |
 | :e  | Reload file |
 |     |             |
 
-### Move
+## Move
 |  Key  |                          Discription                          |
 | ----- | ------------------------------------------------------------- |
 | $     | jump to line end                                              |
@@ -20,7 +20,7 @@
 |       |                                                               |
 |       |                                                               |
 
-### Separate and Diff mode
+## Separate and Diff mode
 |      Key      |            Discription             |
 | ------------- | ---------------------------------- |
 | ctl-w v       | Split vertically                   |
@@ -37,13 +37,20 @@
 |               |                                    |
 |               |                                    |
 
-### Screen size
+## Merge mode
+|      Key         |            Discription             |
+| ---------------- | ---------------------------------- |
+| :%diffget LOCAL  | checkout --ours                    |
+| :%diffget REMOTE | checkout --theirs                  |
+|                  |                                    |
+
+## Screen size
 |  Key  | Discription |
 | ----- | ----------- |
 | ctl-+ | Large       |
 | ctl-- | Small       |
 
-### Selection 
+## Selection
 |  Key  | Discription                                              |
 | ----- | -------------------------------------------------------- |
 | v     | Selection mode                                           |
@@ -51,13 +58,13 @@
 | ctl-v | Rectangle selection mode (shift-i)Switch Insert mode.    |
 |       |                                                          |
 
-### (Re\|Un)do
+## (Re\|Un)do
 |  Key  | Discription |
 | ----- | ----------- |
 | u     | Undo        |
 | ctl-r | Redo        |
 
-### Replace
+## Replace
 |     Key      | Discription                   |
 | ------------ | ----------------------------- |
 | s/foo/bar/   | First letter in current line  |
@@ -65,14 +72,14 @@
 | %s/foo/bar/g | All in open file              |
 |              |                               |
 
-### Command history
+## Command history
 |     Key      | Discription           |
 | ------------ | --------------------- |
 | :{echo}<UP>  | Followup form histroy |
 |              |                       |
 |              |                       |
 
-### Macro
+## Macro
 |        Key        | Discription  |
 | ----------------- | ------------ |
 | q<letter> {rec} q | Record macro |
@@ -83,7 +90,7 @@
 |                   |              |
 
 
-### Others
+## Others
 |   Key   |      Discription                          |
 | ------- | ----------------------------------------- |
 | y       | Yank                                      |
@@ -95,11 +102,12 @@
 | P       | Paste                                     |
 | ctl-c   | (=ESC)Insert mode to cmd                  |
 | d i w   | Delete current word                       |
-|         |                                           |
+| ctl-z   | suspend                                   |
+| fg      | resume                                    |
 |         |                                           |
 
-### Indent format  
+## Indent format
 `:filetype indent on | setf html | normal gg=G`
-### show filepath
+## show filepath
 `:echo expand("%:p")`
 
