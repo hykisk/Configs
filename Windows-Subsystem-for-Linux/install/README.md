@@ -5,7 +5,7 @@
 
 1. 設定 > 更新とセキュリティ > 開発者向け ： 開発者モードON
 1. WSL有効  
-    <img src="./img/enable.jpg" alt="enable">  
+  <img src="./img/enable.jpg" alt="enable">
 1. インストール
 
 ```
@@ -21,15 +21,14 @@ $ lxrun /install
 - ツールでの変更が基本。
 1. https://github.com/Microsoft/console
 1. VSでビルド。
-1. exeを移動。ColorTool\ColorTool\bin\Release\exe >>> ColorTool\exe
-1. cmd起動（bashではない）
-1. xxx.exeと同じ階層で実行して、cmdを起動しなおす。bashに反映されていたらOK。
-```
+1. exeを移動して実行。
+```cmd
+$ move -p C:\tools\ColorTool\ColorTool\bin\Release\colortool.exe C:\tools\ColorTool
+$ move -p C:\tools\ColorTool\ColorTool\bin\Release\colortool.exe.config C:\tools\ColorTool
 $ .\colortool.exe solarized_dark
 ```
 
-- Color Scheme  
-`./cmd-color-scheme.reg`    
+- Color Schemeb `./cmd-color-scheme.reg`
 
 ![color](./img/cmd-color-scheme.png)
 
@@ -63,7 +62,7 @@ $ sudo apt-get install build-essential
 
 ## Git
 - - -
-- ~~新しいものをインストール~~ 公式リポのバージョンは古い 
+- ~~新しいものをインストール~~ 公式リポのバージョンは古い
 
 ```
 $ sudo apt-get install apt-file
@@ -81,6 +80,11 @@ $ sudo apt-get install git
 $ git --version
 ```
 
+## tig
+```
+$ sudo apt-get install tig
+```
+
 ## tmux
 
 - 最新版を使用するため、ソースを取得しコンパイルする。(GitHubにSSHキー登録済みであること)
@@ -89,7 +93,7 @@ $ git --version
 $ dpkg -l | grep tmux
 # varsion x.x-xbuild1
 $ sudo apt update
-# 18/08/28 added for error of autogen.sh  
+# 18/08/28 added for error of autogen.sh
 $ sudo apt-get -y install pkg-config libtool
 $ sudo apt install -y build-essential automake libevent-dev ncurses-dev
 $ mkdir -p ~/src
