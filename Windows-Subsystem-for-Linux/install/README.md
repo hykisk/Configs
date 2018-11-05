@@ -4,8 +4,8 @@
 - - -
 
 1. 設定 > 更新とセキュリティ > 開発者向け ： 開発者モードON
-1. WSL有効  
-  <img src="./img/enable.jpg" alt="enable">
+1. WSL有効
+<br>![enable_dbg](./img/enable.jpg)
 1. インストール
 
 ```
@@ -34,7 +34,10 @@ $ .\colortool.exe solarized_dark
 
 
 ## バッファーサイズ
-![buffer-size](./img/cmd-buffer-size.png)
+- property
+<br>![property](./img/cmd-buffer-size.png)
+- default
+<br>![default](./img/cmd-buffer-size2.png)
 
 ## パッケージ更新
 - - -
@@ -106,6 +109,12 @@ $ ./configure
 $ make
 $ cp ~/src/tmux/tmux /usr/local/bin/
 ```
+
+## Vim
+[Installation](../../Vim/README.md)
+
+## Custom `history.sh`
+[history.sh](../../My-Linux-Config-Set/README.md)
 
 ### OS間のファイル区切り文字がちがいを解決
 
