@@ -136,3 +136,9 @@ dfdts.dll             kbdlisub.dll
 [dein]   neosnippet.vim(1 change)
 [dein] Done: (2018/08/29 01:23:23)Press ENTER or type command to continue
 ```
+
+## CtrlP speed up
+```
+sudo apt-get install pcre-devel xz-devel xz xz-devel
+sudo apt install silversearcher-ag
+```

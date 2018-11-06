@@ -1,4 +1,4 @@
-# Vim shortcut
+# Vim Cheatsheet
 
 ## File operation
 | Key | Discription |
@@ -34,7 +34,9 @@
 | ]-c           | Move to next conflict              |
 | [-c           | Move to back conflict              |
 | :wqa          | Save and close all tab             |
-|               |                                    |
+| H             | The first line on the screen       |
+| M             | The middle line on the screen      |
+| L             | The last line on the screen        |
 |               |                                    |
 
 ## Merge mode
@@ -64,6 +66,12 @@
 | u     | Undo        |
 | ctl-r | Redo        |
 
+## Search
+|  Key   | Discription                             |
+| ------ | --------------------------------------- |
+| *      | Search words backwards under the cursor |
+|        |                                         |
+
 ## Replace
 |     Key      | Discription                   |
 | ------------ | ----------------------------- |
@@ -73,11 +81,11 @@
 |              |                               |
 
 ## Command history
-|     Key      | Discription           |
-| ------------ | --------------------- |
-| :{echo}<UP>  | Followup form histroy |
-|              |                       |
-|              |                       |
+|     Key        | Discription           |
+| -------------- | --------------------- |
+| :{echo}<UP>    | Followup form histroy |
+| :FixWhitespace | Delete trailing blank character |
+|                |                       |
 
 ## Macro
 |        Key        | Discription  |
@@ -101,9 +109,11 @@
 | A       | Move to end of line and Insert mode       |
 | P       | Paste                                     |
 | ctl-c   | (=ESC)Insert mode to cmd                  |
-| d i w   | Delete current word                       |
+| d-i-w   | Delete current word                       |
 | ctl-z   | suspend                                   |
 | fg      | resume                                    |
+| R       | Raplace mode                              |
+| ZZ      | Same as :wq                               |
 |         |                                           |
 
 ## Indent format
