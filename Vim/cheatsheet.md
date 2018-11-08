@@ -7,7 +7,7 @@
 |     |             |
 
 ## Move
-|  Key  |                          Discription                          |
+| Key   | Discription                                                   |
 | ----- | ------------------------------------------------------------- |
 | $     | jump to line end                                              |
 | 0     | jump to line top                                              |
@@ -21,7 +21,7 @@
 |       |                                                               |
 
 ## Separate and Diff mode
-|      Key      |            Discription             |
+| Key           | Discription                        |
 | ------------- | ---------------------------------- |
 | ctl-w v       | Split vertically                   |
 | ctl-w s       | Split horizontally                 |
@@ -40,7 +40,7 @@
 |               |                                    |
 
 ## Merge mode
-|      Key         |            Discription             |
+| Key              | Discription                        |
 | ---------------- | ---------------------------------- |
 | :%diffget LOCAL  | checkout --ours                    |
 | :%diffget REMOTE | checkout --theirs                  |
@@ -53,7 +53,7 @@
 | ctl-- | Small       |
 
 ## Selection
-|  Key  | Discription                                              |
+| Key   | Discription                                              |
 | ----- | -------------------------------------------------------- |
 | v     | Selection mode                                           |
 | V     | Line selection mode                                      |
@@ -61,7 +61,7 @@
 |       |                                                          |
 
 ## (Re\|Un)do
-|  Key  | Discription |
+| Key   | Discription |
 | ----- | ----------- |
 | u     | Undo        |
 | ctl-r | Redo        |
@@ -73,22 +73,22 @@
 |        |                                         |
 
 ## Replace
-|     Key      | Discription                   |
+| Key          | Discription                   |
 | ------------ | ----------------------------- |
 | s/foo/bar/   | First letter in current line  |
 | s/foo/bar/g  | All in current line           |
 | %s/foo/bar/g | All in open file              |
 |              |                               |
 
-## Command history
-|     Key        | Discription           |
-| -------------- | --------------------- |
-| :{echo}<UP>    | Followup form histroy |
-| :FixWhitespace | Delete trailing blank character |
-|                |                       |
+## Command
+| Key              | Discription                     |
+| --------------   | ------------------------------- |
+| :FixWhitespace   | Delete trailing blank character |
+| :TableModeToggle | Markdown table formatter        |
+|                  |                                 |
 
 ## Macro
-|        Key        | Discription  |
+| Key               | Discription  |
 | ----------------- | ------------ |
 | q<letter> {rec} q | Record macro |
 | @<letter>         | Execute a    |
@@ -97,9 +97,8 @@
 |                   |              |
 |                   |              |
 
-
 ## Others
-|   Key   |      Discription                          |
+| Key     | Discription                               |
 | ------- | ----------------------------------------- |
 | y       | Yank                                      |
 | x       | Cut                                       |
@@ -107,13 +106,19 @@
 | D       | Delete end of line                        |
 | I       | Move to beginning of line and Insert mode |
 | A       | Move to end of line and Insert mode       |
-| P       | Paste                                     |
+| p,P     | Paste                                     |
+| o,O     | Add new line                              |
+| ctl-s   | Start syntastic                           |
 | ctl-c   | (=ESC)Insert mode to cmd                  |
 | d-i-w   | Delete current word                       |
-| ctl-z   | suspend                                   |
-| fg      | resume                                    |
+| ctl-z   | Suspend vim                               |
+| fg      | Resume                                    |
 | R       | Raplace mode                              |
 | ZZ      | Same as :wq                               |
+| zo      | Open folding                              |
+| zc      | Close folding                             |
+| ctl-a   | increment numbers                         |
+| ctl-x   | decrement numbers                         |
 |         |                                           |
 
 ## Indent format

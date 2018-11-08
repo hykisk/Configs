@@ -1,6 +1,7 @@
 # Installation
 
 ## Vim
+- - -
 
 - Download src and Preparation
 ```
@@ -137,8 +138,49 @@ dfdts.dll             kbdlisub.dll
 [dein] Done: (2018/08/29 01:23:23)Press ENTER or type command to continue
 ```
 
-## CtrlP speed up
+
+## Plugins
+- - -
+
+### CtrlP speed up
 ```
 sudo apt-get install pcre-devel xz-devel xz xz-devel
 sudo apt install silversearcher-ag
 ```
+
+### JS Sysntax error
+```
+$ sudo apt install eslint
+$ npm i -g eslint
+$ ln -s /usr/local/bin/eslint /usr/bin/eslint
+$ ln -s /usr/bin/nodejs /usr/bin/node
+https://qiita.com/seibe/items/36cef7df85fe2cefa3ea
+```
+
+### Code Formatter
+```
+$ npm i -g prettier
+$ npm i -g -y prettier-eslint-cli
+```
+
+### ~~Markdown Preview~~
+```
+$ sudo apt-get install libreadline-dev zlib1g-dev
+$ sudo apt-get install libssl-dev
+
+# install rbenv
+$ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+$ exec $SHELL -l
+
+# install ruby-build
+$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+# install Ruby
+$ rbenv install 2.5.0
+$ rbenv global 2.5.0
+
+$ npm -g install instant-markdown-d
+```
+

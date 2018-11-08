@@ -25,6 +25,25 @@ if dein#load_state(s:dein_dir)
   call dein#add('bronson/vim-trailing-whitespace')
   " Tree view
   call dein#add('scrooloose/nerdtree')
+  " Find syntax error
+  call dein#add('w0rp/ale')
+  " Javasctipt code formatter local installed
+
+  " JS highlight
+  call dein#add('othree/yajs.vim')
+  " Snippet
+  call dein#add('Shougo/neocomplete.vim')
+  call dein#add('Shougo/neosnippet')
+  call dein#add('Shougo/neosnippet-snippets')
+  " Markdown table formatter
+  call dein#add('dhruvasagar/vim-table-mode')
+  " Markdown viewer
+  "call dein#add('suan/vim-instant-markdown')
+  call dein#add('plasticboy/vim-markdown')
+  call dein#add('kannokanno/previm')
+  call dein#add('tyru/open-browser.vim')
+  " Auto close tag
+  call dein#add('alvan/vim-closetag')
 
   call dein#end()
   call dein#save_state()
@@ -69,7 +88,7 @@ set tabstop=4    " display
 set shiftwidth=4 " input tab
 
 " Statusbar
-set statusline=%F%m%r%h%w%=\ %{fugitive#statusline()}\ [%{&ff}:%{&fileencoding}]\ [%Y]\ [%04l,%04v]\ [%l/%L]\ %{strftime(\"%Y/%m/%d\ %H:%M:%S\")}
+set statusline=%F%m%r%h%w%=\ %{fugitive#statusline()}\ %{ALEGetStatusLine()}\ [%{&ff}:%{&fileencoding}]\ [%Y]\ [%04l,%04v]\ [%l/%L]\ %{strftime(\"%Y/%m/%d\ %H:%M:%S\")}
 
 " Command
 set wildmenu " Completion
@@ -78,6 +97,8 @@ set history=9999
 " Others
 set backspace=indent,eol,start
 nnoremap <Esc><Esc> :nohlsearch<CR><ESC> " Press Esc twice to highlight erase
+nmap <C-q> :set nowrap<CR>
+nmap <S-q> :set wrap<CR>
 
 """"""""""""""""""""""""""""""
 " vim-fugitive (Git)
@@ -89,7 +110,6 @@ nnoremap <silent> [fugitive]a :Gwrite<CR>
 nnoremap <silent> [fugitive]c :Gcommit<CR>
 nnoremap <silent> [fugitive]b :Gblame<CR>
 nnoremap <silent> [fugitive]d :Gdiff<CR>
-nnoremap <silent> [fugitive]m :Gmerge<CR>
 
 """"""""""""""""""""""""""""""
 " ctrlp.vim, ctrlp-funky
@@ -111,6 +131,76 @@ map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable  = '▶'
 let g:NERDTreeDirArrowCollapsible = '▼'
+let NERDTreeShowHidden = 1
+" move tab: gt, gT
+
+"----------------------------------------------------------
+" ALE(ESLint)
+"----------------------------------------------------------
+nmap [ale] <Nop>
+map <C-k> [ale]
+" display:off/on
+nmap <silent> [ale]<C-K> <Plug>(ale_toggle)
+nmap <silent> [ale]<C-P> <Plug>(ale_previous)
+nmap <silent> [ale]<C-N> <Plug>(ale_next)
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+
+let g:ale_linters = {'javascript': ['eslint']}
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier-eslint']
+let g:ale_fix_on_save = 0
+let g:ale_javascript_prettier_use_local_config = 1
+
+let g:ale_sign_column_always = 0
+" disable when open
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+" disable when editing
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 0
+let g:ale_open_list = 0
+let g:ale_keep_list_window_open = 0
+
+"----------------------------------------------------------
+" prettier (when ignore) // prettier-ignore
+"----------------------------------------------------------
+
+"----------------------------------------------------------
+" Auto close tag
+"----------------------------------------------------------
+let g:closetag_filenames = '*.html,*.xml,*.css'
+
+"----------------------------------------------------------
+" Markdown
+"----------------------------------------------------------
+map <C-k><C-M> :PrevimOpen<CR>
+autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
+autocmd BufRead,BufNewFile *.md  set filetype=markdown
+let g:table_mode_corner = '|'
+" for get windows path : /usr/bin/winlxss
+let g:previm_open_cmd="winlxss"
+let g:previm_enable_realtime=1
+
+"----------------------------------------------------------
+" Snippet
+"----------------------------------------------------------
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#min_keyword_length = 3
+let g:neocomplete#enable_auto_delimiter = 1
+let g:neocomplete#auto_completion_start_length = 1
+"let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
+inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
+imap <expr><CR> neosnippet#expandable() ? "<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "<C-y>" : "<CR>"
+imap <expr><TAB> pumvisible() ? "<C-n>" : neosnippet#jumpable() ? "<Plug>(neosnippet_expand_or_jump)" : "<TAB>"
+
 
 " Vimdiff(git mergetool) Setting and Color
 set diffopt-=filler " Do not display '---'
@@ -136,3 +226,4 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 "colorscheme molokai
+

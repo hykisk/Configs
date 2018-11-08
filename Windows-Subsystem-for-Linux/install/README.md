@@ -63,6 +63,9 @@ $ sudo apt upgrade
 $ sudo apt-get install build-essential
 ```
 
+## Custom `history.sh`
+[history.sh](../../My-Linux-Config-Set/README.md)
+
 ## Git
 - - -
 - ~~新しいものをインストール~~ 公式リポのバージョンは古い
@@ -98,7 +101,7 @@ $ dpkg -l | grep tmux
 $ sudo apt update
 # 18/08/28 added for error of autogen.sh
 $ sudo apt-get -y install pkg-config libtool
-$ sudo apt install -y build-essential automake libevent-dev ncurses-dev
+$ sudo apt install -y automake libevent-dev ncurses-dev
 $ mkdir -p ~/src
 $ mkdir -p ~/bin
 $ cd ~/src
@@ -113,37 +116,9 @@ $ cp ~/src/tmux/tmux /usr/local/bin/
 ## Vim
 [Installation](../../Vim/README.md)
 
-## Custom `history.sh`
-[history.sh](../../My-Linux-Config-Set/README.md)
+## Others
+[others installtaion](../../My-Linux-Config-Set/README.md)
 
-### OS間のファイル区切り文字がちがいを解決
-
-1. 以下を.bashrcに追加
-
-```
-function winpath()
-{
-  if [ -p /dev/stdin ]; then
-    input_path=$(cat -)
-  else
-    input_path=$(echo $@)
-  fi
-  /bin/readlink -f $input_path | sed -e "s|^\(/mnt/\([a-z]\)\)\(.*\)|\U\2:\E\3|" -e "s|/|\\\\|g"
-}
-
-function linuxpath()
-{
-  if [ -p /dev/stdin ]; then
-    input_path=$(cat -)
-  else
-    input_path=$(echo $@)
-  fi
-
-  echo $input_path | sed -e "s|\\\\|/|g" -e "s|^\([A-Za-z]\)\:/\(.*\)|/mnt/\L\1\E/\2|"
-}
-
-export TMPDIR=`echo "$(/mnt/c/Windows/System32/cmd.exe /C echo %TEMP%)" | tr -d "\r" | linuxpath`
-```
 
 ## アンインストール
 - - -
