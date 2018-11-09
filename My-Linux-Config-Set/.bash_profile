@@ -1,6 +1,5 @@
 # .bash_profile
 
-#export PATH
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
@@ -22,32 +21,7 @@ LS_COLORS='no=00;38;5;244:rs=0:di=00;38;5;33:ln=00;38;5;37:mh=00:pi=48;5;230;38;
 if [ -f ~/.dircolors-solarized/dircolors.ansi-dark ]; then
     export LS_COLORS
     eval `dircolors ~/.dircolors-solarized/dircolors.ansi-dark`
-el
+else
     echo "not found file. ~/.dircolors-solarized/dircolors.ansi-dark"
 fi
-
-# alias
-alias rm='rm -i'
-alias ls='ls --color=auto --show-control-chars'
-alias grep='grep --color=always'
-alias vi='vim'
-
-# ctrl-s, ctrl-i search
-stty stop undef
-stty start undef
-
-# find command. Exclude target directory.
-function find { $( which find ) "$@"  -not -iwholename '*/.git/*'  ; }
-
-#. /usr/share/git-core/contrib/completion/git-prompt.sh
-#export PS1='\u@\h [\W $(__git_ps1)] \$ '
-
-# Share history for tmux
-function share_history {
-    history -a
-    history -c
-    history -r
-}
-PROMPT_COMMAND='share_history'
-shopt -u histappend
 

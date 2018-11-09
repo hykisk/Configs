@@ -66,20 +66,19 @@ xterm*|rxvt*)
 esac
 
 # enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+# move to.bash_profile
 
-    alias grep='grep --color=always'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
+
+# ctrl-s, ctrl-i search
+stty stop undef
+stty start undef
 
 # aliases
 alias rm='rm -i'
 alias grep='grep --color=always'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 alias vi='vim'
 
 # some more ls aliases
@@ -87,6 +86,7 @@ alias ls='ls --color=auto --show-control-chars'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias lr='ls -lR'
 
 # ctrl-s, ctrl-i search
 stty stop undef
@@ -96,8 +96,8 @@ stty start undef
 function find { $( which find ) "$@"  -not -iwholename '*/.git/*'  ; }
 
 # git
-#source ~/.git-prompt.sh
-#export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+source ~/.git-prompt.sh
+export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 #export PS1='\u@\h [\W $(__git_ps1)] \$ '
 
 # replacement path Windows to Linux
