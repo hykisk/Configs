@@ -2,13 +2,11 @@
 # Configs
 
 <a id="e.g."></a>
-- Create a symbolic link. e.g. tmux
+- Create dotfile symbolic links to home directory.
 ```
-$ cd ~
 $ git clone https://github.com/hykisk/Configs.git ~/Configs
-$ ln -s ~/Configs/tmux/.tmux.conf ~/.tmux.conf
+$ ~/Configs/createln.sh
 ```
-
 
 ## Git
 - - -
