@@ -133,6 +133,9 @@ let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable  = '▶'
 let g:NERDTreeDirArrowCollapsible = '▼'
 let NERDTreeShowHidden = 1
+" If there is no argument, it will start up
+autocmd vimenter * if !argc() | NERDTree | endif
+
 " move tab: gt, gT
 
 "----------------------------------------------------------
