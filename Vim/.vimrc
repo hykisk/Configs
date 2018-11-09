@@ -77,6 +77,7 @@ set hlsearch
 set incsearch
 set ignorecase " Uppercase and lowercase are not distinguished
 set smartcase  " Only when searching with a mixture of uppercase and lowercase letters, distinguish
+set nowrapscan
 
 " Compare
 set diffopt=iwhite " Ignore whitespace
@@ -177,7 +178,7 @@ let g:closetag_filenames = '*.html,*.xml,*.css'
 "----------------------------------------------------------
 " Markdown
 "----------------------------------------------------------
-map <C-k><C-M> :PrevimOpen<CR>
+map <C-w><C-M> :PrevimOpen<CR>
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
 let g:table_mode_corner = '|'
@@ -192,7 +193,7 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#min_keyword_length = 3
 let g:neocomplete#enable_auto_delimiter = 1
-let g:neocomplete#auto_completion_start_length = 1
+let g:neocomplete#auto_completion_start_length = 3
 "let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
