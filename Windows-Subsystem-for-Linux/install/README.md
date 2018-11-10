@@ -90,8 +90,13 @@ $ sudo apt-get -y install tig
 ```
 
 ## Create symbolic link
-[createln.sh](../../createln.sh)
-
+- [createln.sh](../../createln.sh)
+- git `--assume-unchanged`
+```
+$ cd /mnt/c/work/Configs
+$ git update-index --assume-unchanged ./Windows-Subsystem-for-Linux/.gitconfig
+$ git update-index --assume-unchanged ./Windows-Subsystem-for-Linux/bin/winlxss.sh
+```
 ## tmux
 [Installation ##Ubuntu](../../tmux/README.md)
 
