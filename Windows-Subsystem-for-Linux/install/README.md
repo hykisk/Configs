@@ -34,10 +34,8 @@ $ .\colortool.exe solarized_dark
 
 
 ## バッファーサイズ
-- property
+- property/default
 <br>![property](./img/cmd-buffer-size.png)
-- default
-<br>![default](./img/cmd-buffer-size2.png)
 
 ## パッケージ更新
 - - -
