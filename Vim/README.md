@@ -8,7 +8,7 @@
 $ cd /usr/local/src
 $ git clone https://github.com/vim/vim.git
 $ cd vim
-$ sudo apt-get install gcc-4.9 autoconf automake make lua5.3 luajit liblua5.3-0 liblua5.3-dev libperl5.22 libperl-dev libpython-dev python-dev python3-dev tcl tcl-dev
+$ sudo apt-get -y install gcc-4.9 autoconf automake make lua5.3 luajit liblua5.3-0 liblua5.3-dev libperl5.22 libperl-dev libpython-dev python-dev python3-dev tcl tcl-dev
 $ mkdir /usr/include/lua5.3/include
 $ cp -p /usr/include/lua5.3/*.h /usr/include/lua5.3/include/.
 $ cp -p /usr/include/lua5.3/*.hpp /usr/include/lua5.3/include/.
@@ -71,9 +71,9 @@ Huge version without GUI.  Features included (+) or not (-):
 
 ## Dein(Package Manager)
 ```
-$ cd ~
-$ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/installer.sh
-$ sh ~/installer.sh ~/.vim/bundle/dein
+$ mkdir -p /use/local/dein
+$ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > /use/local/dein/installer.sh
+$ sh /use/local/dein/installer.sh ~/.vim/bundle/dein
 
 Install to "/root/.vim/bundle/dein/repos/github.com/Shougo/dein.vim"...
 Begin fetching dein...
@@ -126,35 +126,76 @@ syntax enable
 "endif
 
 "End dein Scripts-------------------------
+```
 
+```
 $ vi ~/.vimrc
 
 ### Succeed ###
-dfdts.dll             kbdlisub.dll
+[dein] ( 9/19) [+++++++++-----------] yajs.vim
+[dein] (10/19) [++++++++++----------] vim-fugitive
+[dein] (11/19) [+++++++++++---------] lightline.vim
+[dein] (12/19) [++++++++++++--------] nerdtree
+[dein] (13/19) [+++++++++++++-------] neosnippet
+[dein] (14/19) [++++++++++++++------] vim-colors-solarized
+[dein] (15/19) [+++++++++++++++-----] previm
+[dein] (16/19) [++++++++++++++++----] ale
+[dein] (17/19) [+++++++++++++++++---] vim-table-mode
+[dein] (18/19) [++++++++++++++++++--] neocomplete.vim
 [dein] Updated plugins:
-[dein]   deol.nvim(1 change)
+[dein]   vim-closetag(1 change)
+[dein]   molokai(1 change)
+[dein]   ag.vim(1 change)
+[dein]   vim-trailing-whitespace(1 change)
 [dein]   neosnippet-snippets(1 change)
-[dein]   neosnippet.vim(1 change)
-[dein] Done: (2018/08/29 01:23:23)Press ENTER or type command to continue
+[dein]   vim-markdown(1 change)
+[dein]   open-browser.vim(1 change)
+[dein]   ctrlp.vim(1 change)
+[dein]   ctrlp-funky(1 change)
+[dein]   vim-colors-solarized(1 change)
+[dein]   vim-fugitive(1 change)
+[dein]   yajs.vim(1 change)
+[dein]   lightline.vim(1 change)
+[dein]   nerdtree(1 change)
+[dein]   neosnippet(1 change)
+[dein]   previm(1 change)
+[dein]   vim-table-mode(1 change)
+[dein]   neocomplete.vim(1 change)
+[dein]   ale(1 change)
+[dein] Done: (2018/11/10 23:11:59)Press ENTER or type command to continue
 ```
-
 
 ## Plugins
 - - -
 
 ### CtrlP speed up
+~~$ sudo apt-get -y install pcre-devel xz-devel xz xz-devel~~
 ```
-sudo apt-get install pcre-devel xz-devel xz xz-devel
-sudo apt install silversearcher-ag
+$ sudo apt -y install silversearcher-ag
 ```
 
 ### JS Sysntax error
+
+- 1).Need nodejs (https://github.com/tj/n)
 ```
-$ sudo apt install eslint
+
+$ sudo apt-get install -y nodejs npm
+$ node -v
+# When installing with apt-get, the version is old.
+
+$ sudo npm cache clean
+$ sudo npm install n -g
+$ sudo n stable
+$ sudo ln -sf /usr/local/bin/node /usr/bin/node
+$ node -v
+$ sudo apt-get purge -y nodejs npm
+```
+
+- 2).Installation of eslint
+```
 $ npm i -g eslint
 $ ln -s /usr/local/bin/eslint /usr/bin/eslint
 $ ln -s /usr/bin/nodejs /usr/bin/node
-https://qiita.com/seibe/items/36cef7df85fe2cefa3ea
 ```
 
 ### Code Formatter

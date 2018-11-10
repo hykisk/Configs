@@ -18,6 +18,6 @@ _EOF_
 ## zip, unzip
 
 ```
-$ sudo apt install zip
-$ sudo apt install unzip
+$ sudo apt -y install zip
+$ sudo apt -y install unzip
 ```

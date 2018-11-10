@@ -1,6 +1,6 @@
 # Windows Subsystem for Linux
 
-## インストール
+## Installation of WSL
 - - -
 
 1. 設定 > 更新とセキュリティ > 開発者向け ： 開発者モードON
@@ -12,64 +12,61 @@
 $ lxrun /install
 ```
 
-## cmdの管理者で起動
-- ~~win-r `cmd` shift-Enter~~ `win cmd` Right-Click Administrator
-
-## 色変更
+## Color Scheme
 - - -
 
-- ツールでの変更が基本。
+- Pattern A: `regedit`
+  - [cmd-color-scheme.reg](./cmd-color-scheme.reg)
+  - ![color](./img/cmd-color-scheme.png)
+
+- Pattern B: `tool`
 1. https://github.com/Microsoft/console
-1. VSでビルド。
-1. exeを移動して実行。
-```cmd
-$ move -p C:\tools\ColorTool\ColorTool\bin\Release\colortool.exe C:\tools\ColorTool
-$ move -p C:\tools\ColorTool\ColorTool\bin\Release\colortool.exe.config C:\tools\ColorTool
-$ .\colortool.exe solarized_dark
-```
+1. build on VS.
 
-- Color Schemeb `./cmd-color-scheme.reg`
+  ```cmd
+  $ move -p C:\tools\ColorTool\ColorTool\bin\Release\colortool.exe C:\tools\ColorTool
+  $ move -p C:\tools\ColorTool\ColorTool\bin\Release\colortool.exe.config   C:\tools\ColorTool
+  $ C:\tools\ColorTool\colortool.exe solarized_dark
+  ```
 
-![color](./img/cmd-color-scheme.png)
-
-
-## バッファーサイズ
-- property/default
-<br>![property](./img/cmd-buffer-size.png)
-
-## パッケージ更新
+## Change cmd property
 - - -
 
-### 海外サーバ >>> 日本サーバ（初回一回のみ）
+- property/default
+  - ![property](./img/cmd-buffer-size.png)
+
+### Change the use repository of apt-get to Japanese server
+- - -
 
 ```
 sudo sed -i -e 's%http://.*.ubuntu.com%http://ftp.jaist.ac.jp/pub/Linux%g' /etc/apt/sources.list
 ```
 
-### 最新に（基本いつも）
+### Update repository
+- - -
 
 ```
-$ sudo apt update
-$ sudo apt upgrade
+$ sudo apt -y update
+$ sudo apt -y upgrade
 ```
 
-## 開発ツールのインストール
+## Development Tools
 - - -
 
 ~~$ sudo yum groupinstall "Development Tools"~~
 ```
-$ sudo apt-get install build-essential
+$ sudo apt-get -y install build-essential
 ```
 
-## Custom `history.sh`
-[history.sh](../../My-Linux-Config-Set/README.md)
+## Others
+[others installtaion](../../My-Linux-Config-Set/README.md)
 
 ## Git
 - - -
-- ~~新しいものをインストール~~ 公式リポのバージョンは古い
+- 新しいものをインストール **公式リポのバージョンは古い**
 
 ```
-$ sudo apt-get install apt-file
+$ sudo apt-get -y install apt-file
 $ sudo apt-file update
 $ sudo apt-file search add-apt-repository
 $ sudo apt-get install software-properties-common
@@ -79,48 +76,30 @@ $ sudo add-apt-repository ppa:git-core/ppa
 $ sudo apt-get update
 $ sudo apt-get upgrade
 #gitのインストール
-$ sudo apt-get install git
+$ sudo apt-get -y install git
 
 $ git --version
 ```
 
+- if use git(hub|lab), Add ssh-key.
+[## Add SSH Key](../../Git/README.md)
+
 ## tig
 ```
-$ sudo apt-get install tig
+$ sudo apt-get -y install tig
 ```
+
+## Create symbolic link
+[createln.sh](../../createln.sh)
 
 ## tmux
-
-- 最新版を使用するため、ソースを取得しコンパイルする。(GitHubにSSHキー登録済みであること)
-
-```
-$ dpkg -l | grep tmux
-# varsion x.x-xbuild1
-$ sudo apt update
-# 18/08/28 added for error of autogen.sh
-$ sudo apt-get -y install pkg-config libtool
-$ sudo apt install -y automake libevent-dev ncurses-dev
-$ mkdir -p ~/src
-$ mkdir -p ~/bin
-$ cd ~/src
-$ git clone git@github.com:tmux/tmux.git
-$ cd ~/src/tmux
-$ sh autogen.sh
-$ ./configure
-$ make
-$ cp ~/src/tmux/tmux /usr/local/bin/
-```
+[Installation ##Ubuntu](../../tmux/README.md)
 
 ## Vim
 [Installation](../../Vim/README.md)
 
-## Others
-[others installtaion](../../My-Linux-Config-Set/README.md)
-
-
-## アンインストール
+## Uninstall WSL
 - - -
-（コマンドプロンプトの配色設定は残る）
 ```
 lxrun /uninstall /full
 ```
