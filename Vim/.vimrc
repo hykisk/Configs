@@ -147,6 +147,7 @@ map <C-k> [ale]
 nmap <silent> [ale]<C-K> <Plug>(ale_toggle)
 nmap <silent> [ale]<C-P> <Plug>(ale_previous)
 nmap <silent> [ale]<C-N> <Plug>(ale_next)
+nmap <silent> [ale]<C-F> <Plug>(ale_fix)
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
 
