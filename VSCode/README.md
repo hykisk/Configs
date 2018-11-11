@@ -1,16 +1,19 @@
 # Settings
 
-## Sync
-- `Setting Sync` shift-alt-d
-
 ## Language
 - F1 > "Configure Language"
 <br>`"locale":"en-US"`
 
+## Sync
+- `Setting Sync` shift-alt-d
+
+## PlantUML
+- [Download Java](https://java.com/ja/)
+- [graphviz-2.38.msi](https://graphviz.gitlab.io/_pages/Download/windows/graphviz-2.38.msi)
+
 ## Extension Shortcuts
+- `ctl-k, v` Open Markdown with PlantUML.
 - `ctl-alt-v` Paste Image to Markdown from clipboard.
-- `alt-d` Show (.pu) UML.
-- `ctl-k` v Open Markdown with PlantUML.
 - `ctl-alt-t a` Format table in markdown.
 - `shift-alt-f` Format Document.
 
