@@ -38,10 +38,7 @@ if dein#load_state(s:dein_dir)
   " Markdown table formatter
   call dein#add('dhruvasagar/vim-table-mode')
   " Markdown viewer
-  "call dein#add('suan/vim-instant-markdown')
-  call dein#add('plasticboy/vim-markdown')
   call dein#add('kannokanno/previm')
-  call dein#add('tyru/open-browser.vim')
   " Auto close tag
   call dein#add('alvan/vim-closetag')
 

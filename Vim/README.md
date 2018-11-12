@@ -204,24 +204,3 @@ $ npm i -g prettier
 $ npm i -g -y prettier-eslint-cli
 ```
 
-### ~~Markdown Preview~~
-```
-$ sudo apt-get install libreadline-dev zlib1g-dev
-$ sudo apt-get install libssl-dev
-
-# install rbenv
-$ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-$ exec $SHELL -l
-
-# install ruby-build
-$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-
-# install Ruby
-$ rbenv install 2.5.0
-$ rbenv global 2.5.0
-
-$ npm -g install instant-markdown-d
-```
-
