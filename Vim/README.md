@@ -26,48 +26,57 @@ $ ./configure --with-features=huge --disable-darwin --disable-selinux --enable-f
 $ make
 $ sudo make install
 $ cd ~
-$ rm -rf /usr/local/src/vim
+$ ln -sf /usr/local/bin/vim /usr/bin/vim
 ```
 
 - Confirm
-```
-$ vim --version
-VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
-Included patches: 1-1689
-Extra patches: 8.0.0056
-Modified by pkg-vim-maintainers@lists.alioth.debian.org
-Compiled by pkg-vim-maintainers@lists.alioth.debian.org
-Huge version without GUI.  Features included (+) or not (-):
-+acl             +farsi           +mouse_netterm   +tag_binary
-+arabic          +file_in_path    +mouse_sgr       +tag_old_static
-+autocmd         +find_in_path    -mouse_sysmouse  -tag_any_white
--balloon_eval    +float           +mouse_urxvt     -tcl
--browse          +folding         +mouse_xterm     +terminfo
-++builtin_terms  -footer          +multi_byte      +termresponse
-+byte_offset     +fork()          +multi_lang      +textobjects
-+channel         +gettext         -mzscheme        +timers
-+cindent         -hangul_input    +netbeans_intg   +title
--clientserver    +iconv           +packages        -toolbar
--clipboard       +insert_expand   +path_extra      +user_commands
-+cmdline_compl   +job             -perl            +vertsplit
-+cmdline_hist    +jumplist        +persistent_undo +virtualedit
-+cmdline_info    +keymap          +postscript      +visual
-+comments        +langmap         +printer         +visualextra
-+conceal         +libcall         +profile         +viminfo
-+cryptv          +linebreak       -python          +vreplace
-+cscope          +lispindent      +python3         +wildignore
-+cursorbind      +listcmds        +quickfix        +wildmenu
-+cursorshape     +localmap        +reltime         +windows
-+dialog_con      -lua             +rightleft       +writebackup
-+diff            +menu            -ruby            -X11
-+digraphs        +mksession       +scrollbind      -xfontset
--dnd             +modify_fname    +signs           -xim
--ebcdic          +mouse           +smartindent     -xsmp
-+emacs_tags      -mouseshape      +startuptime     -xterm_clipboard
-+eval            +mouse_dec       +statusline      -xterm_save
-+ex_extra        +mouse_gpm       -sun_workshop    -xpm
-+extra_search    -mouse_jsbterm   +syntax
-```
+
+  1). version and Included
+
+  >  ```
+  >  $ vim --version
+  >  VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+  >  Included patches: 1-1689
+  >  Extra patches: 8.0.0056
+  >  Modified by pkg-vim-maintainers@lists.alioth.debian.org
+  >  Compiled by pkg-vim-maintainers@lists.alioth.debian.org
+  >  Huge version without GUI.  Features included (+) or not (-):
+  >  +acl             +farsi           +mouse_netterm   +tag_binary
+  >  +arabic          +file_in_path    +mouse_sgr       +tag_old_static
+  >  +autocmd         +find_in_path    -mouse_sysmouse  -tag_any_white
+  >  -balloon_eval    +float           +mouse_urxvt     -tcl
+  >  -browse          +folding         +mouse_xterm     +terminfo
+  >  ++builtin_terms  -footer          +multi_byte      +termresponse
+  >  +byte_offset     +fork()          +multi_lang      +textobjects
+  >  +channel         +gettext         -mzscheme        +timers
+  >  +cindent         -hangul_input    +netbeans_intg   +title
+  >  -clientserver    +iconv           +packages        -toolbar
+  >  -clipboard       +insert_expand   +path_extra      +user_commands
+  >  +cmdline_compl   +job             -perl            +vertsplit
+  >  +cmdline_hist    +jumplist        +persistent_undo +virtualedit
+  >  +cmdline_info    +keymap          +postscript      +visual
+  >  +comments        +langmap         +printer         +visualextra
+  >  +conceal         +libcall         +profile         +viminfo
+  >  +cryptv          +linebreak       -python          +vreplace
+  >  +cscope          +lispindent      +python3         +wildignore
+  >  +cursorbind      +listcmds        +quickfix        +wildmenu
+  >  +cursorshape     +localmap        +reltime         +windows
+  >  +dialog_con      -lua             +rightleft       +writebackup
+  >  +diff            +menu            -ruby            -X11
+  >  +digraphs        +mksession       +scrollbind      -xfontset
+  >  -dnd             +modify_fname    +signs           -xim
+  >  -ebcdic          +mouse           +smartindent     -xsmp
+  >  +emacs_tags      -mouseshape      +startuptime     -xterm_clipboard
+  >  +eval            +mouse_dec       +statusline      -xterm_save
+  >  +ex_extra        +mouse_gpm       -sun_workshop    -xpm
+  >  +extra_search    -mouse_jsbterm   +syntax
+  >  ```
+  2). Symbolic link of `vi` is `/usr/bin/vim`
+
+- Delete unnecessary soruce
+  > ```
+  > $ rm -rf /usr/local/src/vim
+  > ```
 
 ## Dein(Package Manager)
 ```
