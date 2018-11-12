@@ -204,7 +204,6 @@ $ sudo apt-get purge -y nodejs npm
 ```
 $ npm i -g eslint
 $ ln -s /usr/local/bin/eslint /usr/bin/eslint
-$ ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
 ### Code Formatter
