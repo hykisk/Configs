@@ -73,12 +73,12 @@
 |        |                                         |
 
 ## Replace
-| Key          | Discription                   |
-| ------------ | ----------------------------- |
-| s/foo/bar/   | First letter in current line  |
-| s/foo/bar/g  | All in current line           |
-| %s/foo/bar/g | All in open file              |
-|              |                               |
+| Key           | Discription                   |
+| ------------- | ----------------------------- |
+| :s/foo/bar/   | First letter in current line  |
+| :s/foo/bar/g  | All in current line           |
+| :%s/foo/bar/g | All in open file              |
+|               |                               |
 
 ## Command
 | Key              | Discription                     |
@@ -116,7 +116,9 @@
 | R       | Raplace mode                              |
 | ZZ      | Same as :wq                               |
 | zo      | Open folding                              |
+| zO      | Open all folding                          |
 | zc      | Close folding                             |
+| zC      | Close all folding                         |
 | ctl-a   | increment numbers                         |
 | ctl-x   | decrement numbers                         |
 |         |                                           |
