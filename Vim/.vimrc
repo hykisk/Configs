@@ -224,9 +224,9 @@ endif
 " Syntax
 "----------------------------------------------------------
 syntax enable
-:let g:xml_syntax_folding = 1
-:set foldmethod=indent
-au BufNewFile,BufRead *.xaml setf xml
+":let g:xml_syntax_folding = 1
+":set foldmethod=indent
+"au BufNewFile,BufRead *.xaml setf xml
 
 " Color
 let g:solarized_termcolors=256
