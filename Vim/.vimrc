@@ -184,7 +184,7 @@ autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
 let g:table_mode_corner = '|'
 " for get windows path : /usr/bin/winlxss
-let g:previm_open_cmd="winlxss"
+let g:previm_open_cmd="bash winlxss"
 let g:previm_enable_realtime=1
 
 "----------------------------------------------------------
