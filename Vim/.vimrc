@@ -35,6 +35,8 @@ if dein#load_state(s:dein_dir)
   call dein#add('Shougo/neocomplete.vim')
   call dein#add('Shougo/neosnippet')
   call dein#add('Shougo/neosnippet-snippets')
+  " High speed cursor movement
+  call dein#add('Lokaltog/vim-easymotion')
   " Markdown table formatter
   call dein#add('dhruvasagar/vim-table-mode')
   " Markdown viewer
@@ -116,6 +118,7 @@ if executable('ag')
   let g:ctrlp_use_caching=0 " unuse cache of ctrlp
   let g:ctrlp_user_command='ag %s -i --hidden -g ""'
 endif
+let g:ctrlp_working_path_mode = 0
 let g:ctrlp_match_window = 'order:ttb,min:20,max:40,results:100'
 let g:ctrlp_show_hidden = 1 " exclude dotfile
 let g:ctrlp_types = ['fil']
@@ -166,6 +169,15 @@ let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 0
 let g:ale_open_list = 0
 let g:ale_keep_list_window_open = 0
+
+"----------------------------------------------------------
+" easymotion
+"----------------------------------------------------------
+nmap ,, <Plug>(easymotion-sn)
+xmap ,, <Plug>(easymotion-sn)
+omap ,, <Plug>(easymotion-tn)
+let g:EasyMotion_keys = 'faslkhjnmie,rmo;uwzpqtdgxcvby'
+let g:EasyMotion_smartcase = 1
 
 "----------------------------------------------------------
 " prettier (when ignore) // prettier-ignore
