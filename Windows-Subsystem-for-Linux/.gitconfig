@@ -3,6 +3,10 @@
     email = hisk@xxx.xxx
 [color]
     ui = auto
+[color "decorate"]
+    HEAD = cyan
+    branch = green
+    tag = blue bold
 [diff]
     tool = WinMerge
 [difftool]
@@ -26,9 +30,9 @@
 [alias]
     windiff = difftool -y -d --no-symlinks -t WinMerge
     winmerge = mergetool -y -t WinMerge
-    graph = log --graph --oneline --decorate=full --date=relative --format=\"%C(yellow)%h%C(reset) %C(magenta)[%ad]%C(reset)%C(auto)%d%C(reset) %s %C(cyan)@%an%C(reset)\"
+    graph = log --graph --oneline --decorate=full --date=iso --pretty=format:'%C(red)%h%C(reset) %C(green)[%ad] %C(magenta)<%an>%C(reset) :%C(reset)%C(yellow reverse)%d%C(reset) %s'
+    #--date=relative
     #svn-ref = "!f() { ret=''; for rev in $@; do ret=${ret}' '`git log --grep "git-svn-id.*@${rev}" --pretty=%H;`; done; echo $ret; }; f"
-    log = log --date=local
 [core]
     whitespace = cr-at-eol
     editor = /usr/bin/vi
@@ -36,3 +40,5 @@
 [push]
     default = matching
 
+#[credential]
+#	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
