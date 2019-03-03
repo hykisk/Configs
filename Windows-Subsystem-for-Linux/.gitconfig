@@ -35,8 +35,10 @@
     #svn-ref = "!f() { ret=''; for rev in $@; do ret=${ret}' '`git log --grep "git-svn-id.*@${rev}" --pretty=%H;`; done; echo $ret; }; f"
 [core]
     whitespace = cr-at-eol
-    editor = /usr/bin/vi
+	editor = vim
     pager = less -S
+	autoCRLF = false
+	quotepath = false
 [push]
     default = matching
 
