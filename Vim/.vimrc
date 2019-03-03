@@ -246,3 +246,10 @@ set background=dark
 colorscheme solarized
 "colorscheme molokai
 
+"----------------------------------------------------------
+" Clipboard
+"----------------------------------------------------------
+vnoremap <Space> <Nop>
+nnoremap <silent> <Space>y :.w !win32yank.exe -i<CR><CR>
+nnoremap <silent> <Space>p :r !win32yank.exe -o<CR>
+

@@ -97,6 +97,21 @@ $ cd /mnt/c/work/Configs
 $ git update-index --assume-unchanged ./Windows-Subsystem-for-Linux/.gitconfig
 $ git update-index --assume-unchanged ./Windows-Subsystem-for-Linux/bin/winlxss.sh
 ```
+
+## zip, unzip
+```
+$ sudo apt -y install zip
+$ sudo apt -y install unzip
+```
+
+## Clipboard
+```
+$ mkdir -p /mnt/c/tools/win32yank-x64
+$ cd /mnt/c/tools/win32yank-x64
+$ curl -L -O https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip
+$ rm -rf win32yank-x64.zip README.md LICENSE
+```
+
 ## tmux
 [Installation ##Ubuntu](../../tmux/README.md)
 
@@ -108,3 +123,4 @@ $ git update-index --assume-unchanged ./Windows-Subsystem-for-Linux/bin/winlxss.
 ```
 lxrun /uninstall /full
 ```
+
