@@ -129,6 +129,8 @@ let g:ctrlp_funky_matchtype = 'path'
 " NERDTree
 """"""""""""""""""""""""""""""
 map <C-n> :NERDTreeToggle<CR>
+map <C-l> gt
+map <C-h> gT
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable  = '▶'
 let g:NERDTreeDirArrowCollapsible = '▼'

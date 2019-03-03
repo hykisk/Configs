@@ -69,7 +69,8 @@
 ## Search
 |  Key   | Discription                             |
 | ------ | --------------------------------------- |
-| *      | Search words backwards under the cursor |
+| #      | Search words down the cursor upward     |
+| *      | Search words down the cursor downward   |
 |        |                                         |
 
 ## Replace
