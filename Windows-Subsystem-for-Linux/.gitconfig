@@ -33,14 +33,15 @@
     graph = log --graph --oneline --decorate=full --date=iso --pretty=format:'%C(red)%h%C(reset) %C(green)[%ad] %C(magenta)<%an>%C(reset) :%C(reset)%C(yellow reverse)%d%C(reset) %s'
     #--date=relative
     #svn-ref = "!f() { ret=''; for rev in $@; do ret=${ret}' '`git log --grep "git-svn-id.*@${rev}" --pretty=%H;`; done; echo $ret; }; f"
+    grep = grep --color=auto
 [core]
     whitespace = cr-at-eol
 	editor = vim
-    pager = less -S
+	pager = LESSCHARSET=utf-8 less -S
 	autoCRLF = false
 	quotepath = false
 [push]
-    default = matching
+	default = simple
 
 #[credential]
 #	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
