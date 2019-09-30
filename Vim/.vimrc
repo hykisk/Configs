@@ -1,6 +1,3 @@
-if &compatible
-  set nocompatible
-endif
 set runtimepath+=/root/.vim/bundle/dein/repos/github.com/Shougo/dein.vim
 
 let s:dein_dir = expand('~/.vim/bundle/dein')
@@ -87,9 +84,6 @@ set expandtab " Enabled Softtab
 set tabstop=4    " display
 set shiftwidth=4 " input tab
 
-" Statusbar
-set statusline=%F%m%r%h%w%=\ %{fugitive#statusline()}\ %{ALEGetStatusLine()}\ [%{&ff}:%{&fileencoding}]\ [%Y]\ [%04l,%04v]\ [%l/%L]\ %{strftime(\"%Y/%m/%d\ %H:%M:%S\")}
-
 " Command
 set wildmenu " Completion
 set history=9999
@@ -110,6 +104,9 @@ nnoremap <silent> [fugitive]a :Gwrite<CR>
 nnoremap <silent> [fugitive]c :Gcommit<CR>
 nnoremap <silent> [fugitive]b :Gblame<CR>
 nnoremap <silent> [fugitive]d :Gdiff<CR>
+" Statusbar
+set statusline=%F%m%r%h%w%=\ %{fugitive#statusline()}\ %{ALEGetStatusLine()}\ [%{&ff}:%{&fileencoding}]\ [%Y]\ [%04l,%04v]\ [%l/%L]\ %{strftime(\"%Y/%m/%d\ %H:%M:%S\")}
+
 
 """"""""""""""""""""""""""""""
 " ctrlp.vim, ctrlp-funky

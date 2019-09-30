@@ -2,28 +2,30 @@
 
 ## CentOSのインストール前
 
-VirtualBoxにCentOSをインストールする前に、  
-ネットワークアダプタにNAT、HostOnlyNetWorkを設定しておく。  
+VirtualBoxにCentOSをインストールする前に、ネットワークアダプタにNAT、HostOnlyNetWorkを設定しておく。
 
-## CentOSのインストール後
-
-ifcfg-eth0(NAT)、ifcfg-eth1(ホストオンリーネットワーク)を編集する。
-
-## 同一LAN内からアクセスできるようする手順。（次のことができればOK。）
+## 完了の定義
 
 - GuestOSからインターネットへの接続確認。
 ```
 $ curl http://www.example.com/
 ```
-- HostOSからsshできればOK。
+- ホストOSからsshできる。
 ```
-$ ssh -l root@localhost -p 1022
+$ ssh -l root@{host-only-network_ip} -p 1022
 ```
 
-- 同一LAN上の端末からsshできればOK。
+- ホストOS以外の端末からsshできる。
 ```
-$ ssh -l root@192.168.xxx.xxx -p 1022
+$ ssh -l root@{host-os_ip} -p 1022
 ```
+
+### 0.USキーボード配列
+
+- 一時的
+`loadkeys us`
+- 永続的
+`localectl set-keymap us`
 
 ### 1.NATネットワーク設定の変更点
 

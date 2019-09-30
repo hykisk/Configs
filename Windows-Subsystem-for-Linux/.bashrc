@@ -61,17 +61,13 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-# move to.bash_profile
-
-
 # ctrl-s, ctrl-i search
 stty stop undef
 stty start undef
 
 # aliases
 alias rm='rm -i'
-alias grep='grep --color=always'
+alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
@@ -84,12 +80,8 @@ alias la='ls -A'
 alias l='ls -CF'
 alias lr='ls -lR'
 
-# ctrl-s, ctrl-i search
-stty stop undef
-stty start undef
-
 # find command. Exclude target directory.
-function find { $( which find ) "$@"  -not -iwholename '*/.git/*'  ; }
+function find { $( which find ) "$@"  -not -iwholename '*/.git/**'  ; }
 
 # git
 source ~/.git-prompt.sh

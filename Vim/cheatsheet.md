@@ -3,7 +3,7 @@
 ## File operation
 | Key | Discription |
 | --- | ----------- |
-| :e  | Reload file |
+| `:e`| Reload file |
 |     |             |
 
 ## Move
@@ -33,18 +33,18 @@
 | ctl-w =       | Reset size                         |
 | ]-c           | Move to next conflict              |
 | [-c           | Move to back conflict              |
-| :wqa          | Save and close all tab             |
+| `:wqa`        | Save and close all tab             |
 | H             | The first line on the screen       |
 | M             | The middle line on the screen      |
 | L             | The last line on the screen        |
 |               |                                    |
 
 ## Merge mode
-| Key              | Discription                        |
-| ---------------- | ---------------------------------- |
-| :%diffget LOCAL  | checkout --ours                    |
-| :%diffget REMOTE | checkout --theirs                  |
-|                  |                                    |
+| Key                | Discription                        |
+| ------------------ | ---------------------------------- |
+| `:%diffget LOCAL`  | checkout --ours                    |
+| `:%diffget REMOTE` | checkout --theirs                  |
+|                    |                                    |
 
 ## Screen size
 |  Key  | Discription |
@@ -67,36 +67,37 @@
 | ctl-r | Redo        |
 
 ## Search
-|  Key   | Discription                             |
-| ------ | --------------------------------------- |
-| #      | Search words down the cursor upward     |
-| *      | Search words down the cursor downward   |
-|        |                                         |
+|  Key      | Discription                             |
+| --------- | --------------------------------------- |
+| #         | Search words down the cursor upward     |
+| *         | Search words down the cursor downward   |
+| \c{word}  | Search by ignoring case                 |
+|           |                                         |
 
 ## Replace
-| Key           | Discription                   |
-| ------------- | ----------------------------- |
-| :s/foo/bar/   | First letter in current line  |
-| :s/foo/bar/g  | All in current line           |
-| :%s/foo/bar/g | All in open file              |
-|               |                               |
+| Key             | Discription                   |
+| --------------- | ----------------------------- |
+| `:s/foo/bar/`   | First letter in current line  |
+| `:s/foo/bar/g`  | All in current line           |
+| `:%s/foo/bar/g` | All in open file              |
+|                 |                               |
 
 ## Command
-| Key              | Discription                     |
-| --------------   | ------------------------------- |
-| :FixWhitespace   | Delete trailing blank character |
-| :TableModeToggle | Markdown table formatter        |
-|                  |                                 |
+| Key                | Discription                     |
+| ------------------ | ------------------------------- |
+| `:FixWhitespace`   | Delete trailing blank character |
+| `:TableModeToggle` | Markdown table formatter        |
+|                    |                                 |
 
 ## Macro
-| Key               | Discription  |
-| ----------------- | ------------ |
-| q<letter> {rec} q | Record macro |
-| @<letter>         | Execute a    |
-| :reg              | Show macro   |
-| :let @a<letter>'' | Delete macro |
-|                   |              |
-|                   |              |
+| Key                 | Discription  |
+| ------------------- | ------------ |
+| q<letter> {rec} q   | Record macro |
+| @<letter>           | Execute a    |
+| `:reg`              | Show macro   |
+| `:let @a<letter>''` | Delete macro |
+|                     |              |
+|                     |              |
 
 ## Others
 | Key     | Discription                               |

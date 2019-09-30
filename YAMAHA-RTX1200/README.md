@@ -1,13 +1,13 @@
 # RTX1200
 
-- 静的DNSレコードの登録と反映
+- 髱咏噪DNS繝ｬ繧ｳ繝ｼ繝峨�ｮ逋ｻ骭ｲ縺ｨ蜿肴丐
 
 ```
 dns static a gitlab.local 192.168.XXX.XXX
 clear dns cache
 ```
 
-- 削除
+- 蜑企勁
 ```
 no dns static a gitlab.local 192.168.XXX.XXX
 ```
