@@ -12,12 +12,12 @@ $ curl http://www.example.com/
 ```
 - ホストOSからsshできる。
 ```
-$ ssh -l root@{host-only-network_ip} -p 1022
+$ ssh {username}@{host-only-network_ip} -p 1022
 ```
 
 - ホストOS以外の端末からsshできる。
 ```
-$ ssh -l root@{host-os_ip} -p 1022
+$ ssh {username}@{host-os_ip} -p 1022
 ```
 
 ### 0.USキーボード配列
