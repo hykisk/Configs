@@ -28,3 +28,6 @@ move .\User C:\Users\hykisk\Dropbox\21.Settings\VSCode\User
 mklink /D User "C:\Users\hykisk\Dropbox\21.Settings\VSCode\User"
 ```
 
+## Resetting
+`commnad palette > Advanced Options > Edit Extension Local Settings`
+Overwrite with a new token
