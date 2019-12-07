@@ -26,4 +26,7 @@ $ yum -y install tmux
 
 # nkf のインストール
 $ yum -y install nkf
+
+# ntpdate のインストール
+$ yum -y install ntpdate
 ```
