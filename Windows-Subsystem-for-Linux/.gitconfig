@@ -43,5 +43,5 @@
 [push]
 	default = simple
 
-#[credential]
-#	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
+[credential]
+	helper = /mnt/c/tools/Git/mingw64/libexec/git-core/git-credential-manager.exe
