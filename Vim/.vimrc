@@ -1,4 +1,4 @@
-set runtimepath+=/root/.vim/bundle/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=/home/isshiki/.vim/bundle/dein/repos/github.com/Shougo/dein.vim
 
 let s:dein_dir = expand('~/.vim/bundle/dein')
 
