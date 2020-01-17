@@ -9,7 +9,7 @@
 1. インストール
 
 ```
-$ lxrun /install
+$ curl.exe -L -o ubuntu-1804.appx https://aka.ms/wsl-ubuntu-1804
 ```
 
 ## Color Scheme
