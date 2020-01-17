@@ -9,7 +9,9 @@
 1. インストール
 
 ```
+# powershell
 $ curl.exe -L -o ubuntu-1804.appx https://aka.ms/wsl-ubuntu-1804
+$ Add-AppxPackage ubuntu-1804.appx
 ```
 
 ## Color Scheme
