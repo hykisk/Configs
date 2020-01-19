@@ -4,11 +4,30 @@
 - - -
 
 - Download src and Preparation
+
 ```
+$ sudo su -
+
 $ cd /usr/local/src
 $ git clone https://github.com/vim/vim.git
 $ cd vim
-$ sudo apt-get -y install gcc-4.9 autoconf automake make lua5.3 luajit liblua5.3-0 liblua5.3-dev libperl5.22 libperl-dev libpython-dev python-dev python3-dev tcl tcl-dev
+
+$ sudo apt-get -y install gcc-4.9
+$ sudo apt-get -y install autoconf
+$ sudo apt-get -y install automake
+$ sudo apt-get -y install make
+$ sudo apt-get -y install lua5.3
+$ sudo apt-get -y install luajit
+$ sudo apt-get -y install liblua5.3-0
+$ sudo apt-get -y install liblua5.3-dev
+$ sudo apt-get -y install libperl5.22
+$ sudo apt-get -y install libperl-dev
+$ sudo apt-get -y install libpython-dev
+$ sudo apt-get -y install python-dev
+$ sudo apt-get -y install python3-dev
+$ sudo apt-get -y install tcl
+$ sudo apt-get -y install tcl-dev
+
 $ mkdir /usr/include/lua5.3/include
 $ cp -p /usr/include/lua5.3/*.h /usr/include/lua5.3/include/.
 $ cp -p /usr/include/lua5.3/*.hpp /usr/include/lua5.3/include/.
@@ -31,58 +50,56 @@ $ ln -sf /usr/local/bin/vim /usr/bin/vim
 
 - Confirm
 
-  1). version and Included
+```
+$ vim --version
+VIM - Vi IMproved 8.2 (2019 Dec 12, compiled Jan 18 2020 12:45:31)
+Included patches: 1-126
+Compiled by xxxkurosukexxx
+Huge version without GUI.  Features included (+) or not (-):
++acl               -farsi             -mouse_sysmouse    -tag_old_static
++arabic            +file_in_path      +mouse_urxvt       -tag_any_white
++autocmd           +find_in_path      +mouse_xterm       +tcl
++autochdir         +float             +multi_byte        +termguicolors
+-autoservername    +folding           +multi_lang        +terminal
+-balloon_eval      -footer            -mzscheme          +terminfo
++balloon_eval_term +fork()            +netbeans_intg     +termresponse
+-browse            -gettext           +num64             +textobjects
+++builtin_terms    -hangul_input      +packages          +textprop
++byte_offset       +iconv             +path_extra        +timers
++channel           +insert_expand     +perl/dyn          +title
++cindent           +job               +persistent_undo   -toolbar
+-clientserver      +jumplist          +popupwin          +user_commands
+-clipboard         +keymap            +postscript        +vartabs
++cmdline_compl     +lambda            +printer           +vertsplit
++cmdline_hist      +langmap           +profile           +virtualedit
++cmdline_info      +libcall           +python/dyn        +visual
++comments          +linebreak         +python3/dyn       +visualextra
++conceal           +lispindent        +quickfix          +viminfo
++cryptv            +listcmds          +reltime           +vreplace
++cscope            +localmap          +rightleft         +wildignore
++cursorbind        +lua               -ruby              +wildmenu
++cursorshape       +menu              +scrollbind        +windows
++dialog_con        +mksession         +signs             +writebackup
++diff              +modify_fname      +smartindent       -X11
++digraphs          +mouse             -sound             -xfontset
+-dnd               -mouseshape        +spell             -xim
+-ebcdic            +mouse_dec         +startuptime       -xpm
++emacs_tags        -mouse_gpm         +statusline        -xsmp
++eval              -mouse_jsbterm     -sun_workshop      -xterm_clipboard
++ex_extra          +mouse_netterm     +syntax            -xterm_save
++extra_search      +mouse_sgr         +tag_binary
+```
 
-  >  ```
-  >  $ vim --version
-  >  VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
-  >  Included patches: 1-1689
-  >  Extra patches: 8.0.0056
-  >  Modified by pkg-vim-maintainers@lists.alioth.debian.org
-  >  Compiled by pkg-vim-maintainers@lists.alioth.debian.org
-  >  Huge version without GUI.  Features included (+) or not (-):
-  >  +acl             +farsi           +mouse_netterm   +tag_binary
-  >  +arabic          +file_in_path    +mouse_sgr       +tag_old_static
-  >  +autocmd         +find_in_path    -mouse_sysmouse  -tag_any_white
-  >  -balloon_eval    +float           +mouse_urxvt     -tcl
-  >  -browse          +folding         +mouse_xterm     +terminfo
-  >  ++builtin_terms  -footer          +multi_byte      +termresponse
-  >  +byte_offset     +fork()          +multi_lang      +textobjects
-  >  +channel         +gettext         -mzscheme        +timers
-  >  +cindent         -hangul_input    +netbeans_intg   +title
-  >  -clientserver    +iconv           +packages        -toolbar
-  >  -clipboard       +insert_expand   +path_extra      +user_commands
-  >  +cmdline_compl   +job             -perl            +vertsplit
-  >  +cmdline_hist    +jumplist        +persistent_undo +virtualedit
-  >  +cmdline_info    +keymap          +postscript      +visual
-  >  +comments        +langmap         +printer         +visualextra
-  >  +conceal         +libcall         +profile         +viminfo
-  >  +cryptv          +linebreak       -python          +vreplace
-  >  +cscope          +lispindent      +python3         +wildignore
-  >  +cursorbind      +listcmds        +quickfix        +wildmenu
-  >  +cursorshape     +localmap        +reltime         +windows
-  >  +dialog_con      -lua             +rightleft       +writebackup
-  >  +diff            +menu            -ruby            -X11
-  >  +digraphs        +mksession       +scrollbind      -xfontset
-  >  -dnd             +modify_fname    +signs           -xim
-  >  -ebcdic          +mouse           +smartindent     -xsmp
-  >  +emacs_tags      -mouseshape      +startuptime     -xterm_clipboard
-  >  +eval            +mouse_dec       +statusline      -xterm_save
-  >  +ex_extra        +mouse_gpm       -sun_workshop    -xpm
-  >  +extra_search    -mouse_jsbterm   +syntax
-  >  ```
-  2). Symbolic link of `vi` is `/usr/bin/vim`
+- Exit
 
-- Delete unnecessary soruce
-  > ```
-  > $ rm -rf /usr/local/src/vim
-  > ```
+`$ exit`
 
 ## Dein(Package Manager)
+
 ```
-$ mkdir -p /use/local/dein
-$ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > /use/local/dein/installer.sh
-$ sh /use/local/dein/installer.sh ~/.vim/bundle/dein
+$ mkdir -p ~/dein
+$ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/dein/installer.sh
+$ sh ~/dein/installer.sh ~/.vim/bundle/dein
 
 Install to "/root/.vim/bundle/dein/repos/github.com/Shougo/dein.vim"...
 Begin fetching dein...
@@ -94,50 +111,7 @@ Receiving objects: 100% (5034/5034), 986.32 KiB | 1.15 MiB/s, done.
 Resolving deltas: 100% (2873/2873), done.
 Done.
 
-Please add the following settings for dein to the top of your vimrc (Vim) or init.vim (NeoVim) file:
 
-
-"dein Scripts-----------------------------
-if &compatible
-  set nocompatible               " Be iMproved
-endif
-
-" Required:
-set runtimepath+=/root/.vim/bundle/dein/repos/github.com/Shougo/dein.vim
-
-" Required:
-if dein#load_state('/root/.vim/bundle/dein')
-  call dein#begin('/root/.vim/bundle/dein')
-
-  " Let dein manage dein
-  " Required:
-  call dein#add('/root/.vim/bundle/dein/repos/github.com/Shougo/dein.vim')
-
-  " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-
-  " You can specify revision/branch/tag.
-  call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
-
-  " Required:
-  call dein#end()
-  call dein#save_state()
-endif
-
-" Required:
-filetype plugin indent on
-syntax enable
-
-" If you want to install not installed plugins on startup.
-"if dein#check_install()
-"  call dein#install()
-"endif
-
-"End dein Scripts-------------------------
-```
-
-```
 $ vi ~/.vimrc
 
 ### Succeed ###
