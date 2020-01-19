@@ -5,7 +5,7 @@
 - Create dotfile symbolic links to home directory.
 ```
 $ git clone https://github.com/hykisk/Configs.git ~/Configs
-$ ~/Configs/createln.sh
+$ sudo ~/Configs/createln.sh
 ```
 
 ## Git
