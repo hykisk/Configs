@@ -23,15 +23,13 @@ $ dpkg -l | grep tmux
 # When installing with `apt-get`, the version is old.
 
 $ sudo apt update
-$ sudo apt-get -y install pkg-config libtool
+$ sudo apt-get -y install pkg-config libtool bison
 $ sudo apt install -y automake libevent-dev ncurses-dev
-$ cd /usr/local/src
-$ git clone git@github.com:tmux/tmux.git
-$ cd /usr/local/src/tmux
+$ git clone git@github.com:tmux/tmux.git ~/tmux
+$ cd ~/tmux
 $ sh autogen.sh
 $ ./configure
 $ make
-$ cp -p /usr/local/src/tmux/tmux /usr/bin/
-$ rm -rf /usr/local/src/tmux
-$ rm -rf /usr/local/bin/tmux
+$ cp -p ~/tmux/tmux /usr/bin/
+$ rm -rf ~/tmux
 ```
