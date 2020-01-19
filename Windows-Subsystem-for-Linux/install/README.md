@@ -3,16 +3,19 @@
 ## Installation of WSL
 - - -
 
-1. 設定 > 更新とセキュリティ > 開発者向け ： 開発者モードON
-1. WSL有効
-<br>![enable_dbg](./img/enable.jpg)
-1. インストール
+1. 準備
 
-```
-# powershell
-$ curl.exe -L -o ubuntu-1804.appx https://aka.ms/wsl-ubuntu-1804
-$ Add-AppxPackage ubuntu-1804.appx
-```
+    設定 > 更新とセキュリティ > 開発者向け ： 開発者モードON
+
+1. Install using PowerShell
+
+    ```
+    $ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+    $ curl.exe -L -o ubuntu-1804.appx https://aka.ms/wsl-ubuntu-1804
+    $ Add-AppxPackage ubuntu-1804.appx
+    ```
+
+1. Microsoft Store の Ubuntu を起動。
 
 ## Color Scheme
 - - -
@@ -60,14 +63,13 @@ $ sudo apt -y upgrade
 $ sudo apt-get -y install build-essential
 ```
 
-## Others
-[others installtaion](../../My-Linux-Config-Set/README.md)
-
 ## Git
 - - -
-- 新しいものをインストール **公式リポのバージョンは古い**
+- 公式リポのバージョンは古いので新しいものをインストール
 
 ```
+$ git --version
+
 $ sudo apt-get -y install apt-file
 $ sudo apt-file update
 $ sudo apt-file search add-apt-repository
@@ -84,7 +86,7 @@ $ git --version
 ```
 
 - if use git(hub|lab), Add ssh-key.
-[## Add SSH Key](../../Git/README.md)
+[Add SSH Key](../../Git/README.md)
 
 ## tig
 ```
