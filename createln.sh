@@ -18,7 +18,7 @@ ln -sf /mnt/c/work/Configs/Vim/.prettierrc.js ~/.prettierrc.js
 ln -sf /mnt/c/work/Configs/Vim/cheatsheet.md ~/.cheatsheet.md
 ln -sf /mnt/c/work/Configs/Vim/.vimrc ~/.vimrc
 ln -sf /mnt/c/work/Configs/Git/.git-prompt.sh ~/.git-prompt.sh
-ln -sf /mnt/c/work/Configs/ls-Color/ ~/.dircolors-solarized
+ln -sf /mnt/c/work/Configs/ls-Color ~/.dircolors-solarized
 ln -sf /mnt/c/work/Configs/tmux/.tmux.conf ~/.tmux.conf
 
 ln -sf /usr/local/bin/vim /usr/bin/vi
