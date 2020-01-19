@@ -34,13 +34,13 @@ $ chmod 600 ~/.ssh/config
 $ cat ~/.ssh/id_rsa_github.pub
 ```
 
-## 文字化け対応(git status)
+## 日本語のエスケープをしない (git status)
 
 ```
 $ git config --global core.quotepath false
 ```
 
-## 文字化け対応(gitk)
+## 日本語の文字化け対応 (gitk)
 
 ```
 $ git config --global gui.encoding shift-jis
@@ -52,7 +52,7 @@ $ git config --global gui.encoding utf-8
 1.git-prompt.shのパスを見つける。
 
 ```
-find . -name 'git-prompt.sh'
+find / -name 'git-prompt.sh' 2>/dev/null
 ./usr/share/git-core/contrib/completion/git-prompt.sh
 ```
 
