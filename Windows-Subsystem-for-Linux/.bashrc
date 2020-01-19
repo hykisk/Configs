@@ -128,6 +128,14 @@ fi
 #    . /etc/bash_completion
 #fi
 
+# ls Colors
+if [ -f ~/.dircolors-solarized/dircolors.ansi-dark ]; then
+    eval `dircolors ~/.dircolors-solarized/dircolors.ansi-dark`
+else
+    echo "not found file. ~/.dircolors-solarized/dircolors.ansi-dark"
+fi
+
+
 # history
 HISTSIZE=100000
 HISTTIMEFORMAT='%F %T '
