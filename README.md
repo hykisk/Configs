@@ -44,19 +44,6 @@ $ ~/Configs/createln.sh
 ファイル中の Solarized%20Dark(Solarized%20Light) 部分をputtyのセッション名に修正してダブルクリック。
 http://momota.github.io/blog/2013/08/22/solarized-putty/
 
-
-## sakura
-- - -
-
-```
-$ cp -ip ./Configs/sakura/keyword/* /c/tools/sakura/keyword
-$ mkdir /c/tools/sakura/CSharp
-$ cp -ip ./Configs/sakura/CSharp-highlight/* /c/tools/sakura/CSharp
-```
-
-- 設定 > タイプ別設定一覧 > インポート > Csharp.iniを指定する。
-
-
 ## SVN
 - - -
 
