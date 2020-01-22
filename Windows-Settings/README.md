@@ -160,17 +160,36 @@
 
 - - -
 
-## [Google Translate Desktop](http://www.athtek.com/google-translate-desktop.html#.XiJ26iNUtjF)
+## [QTranslate](http://quest-app.appspot.com/download)
+
+- ホットキーのバッティングを回避
+
+  メインウィンドウを表示する: `なし`
+
+  選択したテキストを音声再生する: `なし`
+
+- - -
+
+## [しまう窓](https://www.vector.co.jp/soft/winnt/util/se480150.html?ds)
+
+- alt+q: Close Windows in current monitor
 
 - - -
 
 ## Others
 
 - Explore
-  - checkboxで選択: `on`
 
-- ウィンドウのシェイク機能とスナップ機能: `無効`
-  win - r `gpedit.msc`  
+  checkbox で選択: `on`
+
+- ウィンドウのスナップ機能を無効にする。
+
+  設定 > システム > マルチタスク > スナップ機能
+
+- ウィンドウのシェイク機能を無効にする。
+
+  win+r `gpedit.msc`
+
   ユーザーの構成 > 管理用テンプレート > デスクトップ > Aero Shakeのウィンドウ最小化のマウス ジェスチャをオフにする > `有効`
 
 - - -
