@@ -37,6 +37,12 @@
 
   [ScancodeMap_REALFORCE-87UB-S-SE170S.reg](./ScancodeMap_REALFORCE-87UB-S-SE170S.reg)
 
+- 入力方式の切り替え
+
+  設定 > キーボードの詳細設定 > 入力言語のホット キー
+
+  入力言語を切り替える: `なし` (誤操作が多くなるため)
+
 - - -
 
 - Memo
