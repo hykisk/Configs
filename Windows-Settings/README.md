@@ -97,19 +97,24 @@
 - ColorPicker
 - Shortcut Keys for Google Search
 - Google PDF Viewer
-- intelfike
+- ~~isear~~
 - Markdown Here (for GMail)
 - Markdown Viewer
 - RESTClient
-- AutocopySelection2Clipboard
-  - Copy delay (ms): `2000`
+- ~~AutocopySelection2Clipboard~~
 - Adblock Plus
 - ~~Alt - Select: Selection Translate - For Alt~~
 - ~~Google Translate for Selected Text~~
 - ~~SearchWP~~
   - CONTENT toc : `off -> on`
 - Nimbus Screen Capture: Screenshot, Edit, Annotate
+  - Hotkeys Settings: all disable
 - Tab hider
+- Saka Key
+  - Use defalt Keybindings
+     - Toggle Saka `ctrl + [`
+     - Scroll Right `ctrl + alt + j`
+     - Scroll Left `ctrl + alt + k`
 
 - - -
 
@@ -153,6 +158,7 @@
 
 - General > `English`
 - General > Show quickcapture window > `off`
+- Advanced > WorkspaceAutoCloseDelay > `0`
 
 - - -
 
