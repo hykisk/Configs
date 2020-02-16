@@ -36,6 +36,8 @@ if dein#load_state(s:dein_dir)
   call dein#add('Lokaltog/vim-easymotion')
   " Markdown table formatter
   call dein#add('dhruvasagar/vim-table-mode')
+  " Markdown highlight
+  call dein#add('plasticboy/vim-markdown')
   " Markdown viewer
   call dein#add('kannokanno/previm')
   " Auto close tag
