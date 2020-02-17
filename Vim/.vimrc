@@ -5,6 +5,10 @@ let s:dein_dir = expand('~/.vim/bundle/dein')
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
+  " Clean
+  ":call map(dein#check_clean(), "delete(v:val, 'rf')")
+  ":call dein#recache_runtimepath()
+
   " Statusline
   call dein#add('itchyny/lightline.vim')
   " Git
