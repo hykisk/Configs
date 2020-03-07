@@ -1,7 +1,5 @@
 # CentOS 7.3 Minimal + α
 
-## 完了の定義
-
 ```
 # 最新化
 $ yum -y update

@@ -1,10 +1,10 @@
 # 仮想環境構築(CentOS Minimal 7.x)
 
-## CentOSのインストール前
+### CentOSのインストール前
 
 VirtualBoxにCentOSをインストールする前に、ネットワークアダプタにNAT、HostOnlyNetWorkを設定しておく。
 
-## 完了の定義
+### 完了の定義
 
 - GuestOSからインターネットへの接続確認。
 ```
@@ -20,14 +20,14 @@ $ ssh {username}@{host-only-network_ip} -p 1022
 $ ssh {username}@{host-os_ip} -p 1022
 ```
 
-### 0.USキーボード配列
+### USキーボード配列
 
 - 一時的
 `loadkeys us`
 - 永続的
 `localectl set-keymap us`
 
-### 1.NATネットワーク設定の変更点
+### NATネットワーク設定の変更点
 
 ```
 $ vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
@@ -53,7 +53,7 @@ GATEWAY=10.0.2.2 #← 追加
 DNS1=8.8.8.8 #← 追加
 ```
 
-### 2.ホストオンリーネットワーク設定の変更点
+### ホストオンリーネットワーク設定の変更点
 
 ```
 $ vi /etc/sysconfig/network-scripts/ifcfg-enp0s8
@@ -78,19 +78,19 @@ NETMASK=255.255.255.0 #← 追加
 DNS1=8.8.8.8 #← 追加
 ```
 
-### 3.シャットダウン
+### シャットダウン
 
 ```
 shutdown -h now
 ```
 
-### 4.Port Forwarding
+### Port Forwarding
 
 - 名前：Rule1
 - プロトコル：TCP
 - ホストIP：{host_ip}
 - ホストポート：1022
-- ゲストIP：10.0.2.25
+- ゲストIP：192.168.56.101
 - ゲストポート：22
 
 以上
