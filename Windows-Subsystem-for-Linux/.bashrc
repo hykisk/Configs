@@ -61,9 +61,12 @@ xterm*|rxvt*)
     ;;
 esac
 
-# ctrl-s, ctrl-i search
-stty stop undef
-stty start undef
+# To avoid error with scp command
+if [[ -t 0 ]]; then
+  # disable ctrl-s
+  stty stop undef
+  stty start undef
+fi
 
 # aliases
 alias rm='rm -i'
