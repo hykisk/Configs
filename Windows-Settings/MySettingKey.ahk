@@ -1,0 +1,24 @@
+F13 & H::Send,{Blind}{Left}
+F13 & J::Send,{Blind}{Down}
+F13 & K::Send,{Blind}{Up}
+F13 & L::Send,{Blind}{Right}
+F13 & A::Send,{Blind}{Home}
+F13 & E::Send,{Blind}{End}
+F13 & M::Send,{Blind}{Enter}
+F13 & B::Send,{Blind}{Backspace}
+F13 & D::Send,{Blind}{Delete}
+F13 & C::Send,{Blind}{Escape}
+F13 & W::Return
+F13 & N::Return
+F13 & P::Return
+F13 & R::Return
+F13 & Q::Return
+F13 & S::Return
+F13 & V::Return
+F13 & O::Return
+F13 & I::Return
+F13 & U::Return
+F13 & Y::Return
+F13 & Z::Return
+F13 & X::Return
+

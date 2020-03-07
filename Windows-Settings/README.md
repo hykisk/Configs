@@ -1,6 +1,11 @@
 ## [images](https://www.dropbox.com/home/70.images)
- - - -
+- - -
+
 ## [shortcuts](https://www.dropbox.com/home/71.shortcuts)
+
+- - -
+## [7Zip](https://sevenzip.osdn.jp/)
+
  - - -
 ## [Clibor](http://www.vector.co.jp/soft/dl/winnt/util/se472890.html)
 
@@ -39,9 +44,16 @@
 
 - 入力方式の切り替え
 
-  設定 > キーボードの詳細設定 > 入力言語のホット キー
+  設定 > キーボードの詳細設定 > 入力言語のホットキー
 
   入力言語を切り替える: `なし` (誤操作が多くなるため)
+
+- [AutoHotKey](https://www.autohotkey.com/)
+
+```
+# cmd
+$ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-Settings\MySettingKey.ahk"
+```
 
 - - -
 
@@ -58,6 +70,7 @@
   02 00 00 00 1D 00 3A 00 # capslock -> ctl
   02 00 00 00 0E 00 2B 00 # backspace -> |
   02 00 00 00 2B 00 0E 00 # | -> backspace
+  02 00 00 00 64 00 38 E0 # right-alt -> F13
   02 00 00 00 4B E0 49 E0 # `Page Up` -> L Arrow
   02 00 00 00 4D E0 51 E0 # `Page Down` -> R Arrow
   00 00 00 00
@@ -77,7 +90,10 @@
 
 - - -
 
-## [Google 日本語入力](https://www.google.co.jp/ime/)
+## MS IME
+- 編集操作
+  - 変更
+    - Ctrl + SPACE: `IME-オン/オフ`
 
 - - -
 
@@ -85,13 +101,17 @@
 - OPTION
   - General Language : `English`
   - Colors & Fonts : `MeiryoKe_Console`
-  - Search for text when you start typing `off->on`
+  - Search for text when you start typing `on -> off`
+- about:config
+  - browser.urlbar.clickSelectsAll: false
+  - browser.urlbar.doubleClickSelectsAll: true
 - Add-ons
 - Tree Style Tab
   - Language of translation: `日本語`
 - ImTranslator
   - Select source language: `Japanese`
   - Select target  language: `English`
+  - Disable shortcuts other than `Inline Translator`
 - ~~Mouse Dictionary~~
 - ColorZilla
 - ColorPicker
@@ -112,10 +132,25 @@
 - Tab hider
 - Saka Key
   - Use defalt Keybindings
-     - Toggle Saka `ctrl + [`
      - Scroll Right `ctrl + alt + j`
      - Scroll Left `ctrl + alt + k`
-
+- Open With
+- Simple Tab Groups
+  - Hotkeys
+    - Open manage groups `ctrl + g`
+    - Add new gropu `ctrl + alt + g`
+    - Delete current gropu `ctrl + alt + d`
+    - Load next group `ctrl + alt + n`
+    - Load previous group `ctrl + alt + p`
+    - Load first gropu `ctrl + alt + f`
+    - Load last gropu `ctrl + alt + l`
+- New Tab Override
+  - URL `https://www.google.com/`
+- Shortcuts
+  - import
+    ```
+    [{"key":"ctrl+s","action":"searchgoogle","blacklist":false,"sites":"*mail.google.com*","open":false,"activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]},{"key":"ctrl+h","action":"disable","blacklist":false,"sites":"*mail.google.com*",    "open":false,"activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]},{"key":"ctrl+j","action":"disable","blacklist":false,"sites":"*mail.google.com*","open":false,"activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]},    {"key":"ctrl+p","action":"disable","blacklist":false,"sites":"*mail.google.com*","open":false,"activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]},{"key":"ctrl+n","action":"disable","blacklist":false,"sites":"*mail.google.com*","open":true,    "activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]}]
+    ```
 - - -
 
 ## [WSL Terminal](https://github.com/goreliu/wsl-terminal/releases)
@@ -158,7 +193,7 @@
 
 - General > `English`
 - General > Show quickcapture window > `off`
-- Advanced > WorkspaceAutoCloseDelay > `0`
+- Advanced > WorkspaceAutoCloseDelay > `2`
 
 - - -
 
@@ -170,21 +205,24 @@
 
 ## [Thunderbird](https://www.thunderbird.net/ja/)
 
+- [Mailbox Alert](https://addons.thunderbird.net/ja/thunderbird/addon/mailbox-alert/)
+
 - - -
 
 ## [QTranslate](http://quest-app.appspot.com/download)
 
+- ウィンドウスタイルを有効にする: `true`
+- テーマ: `PhotoShop Dark`
+- Service: `Google` Uncheck otherwise
 - ホットキーのバッティングを回避
-
-  メインウィンドウを表示する: `なし`
-
-  選択したテキストを音声再生する: `なし`
+  - メインウィンドウを表示する: `ctrl + shift + q`
+  - 選択したテキストを音声再生する: `なし`
 
 - - -
 
-## [しまう窓](https://www.vector.co.jp/soft/winnt/util/se480150.html?ds)
+## [SylphyHorn](Windows Store)
 
-- alt+q: Close Windows in current monitor
+- 仮想デスクトップ切り替え時のツールチップ表示のためだけに使用しているので、ショートカットキーはすべて削除する。
 
 - - -
 
@@ -207,5 +245,7 @@
 - - -
 
 ## win+r（起動アプリに登録） shell:startup
+- pause.exe
+- meminfo.exe
 
 - - -
