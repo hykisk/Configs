@@ -1,4 +1,4 @@
-## minimal
+## Minimal
 
 ```
 $ git config --global user.name "hisk"
@@ -24,6 +24,10 @@ $ vi ~/.ssh/config
 Host github.com
     HostName github.com
     IdentityFile ~/.ssh/id_rsa_github
+Host 192.168.100.201
+    HostName 192.168.100.201
+    Port 20022
+    IdentityFile ~/.ssh/id_rsa_gitlab_private
 #######################################
 $ chmod 600 ~/.ssh/config
 ```
