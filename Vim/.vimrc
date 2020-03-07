@@ -55,6 +55,8 @@ if dein#check_install()
   call dein#install()
 endif
 
+" Encoding
+set encoding=utf-8
 
 " Screen display
 set cursorline
