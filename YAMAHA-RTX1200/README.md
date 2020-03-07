@@ -5,11 +5,11 @@
 
 ```
 # 登録
-$ dns static a gitlab.local 192.168.XXX.XXX
+$ dns static a gitlab.private.example.co.jp 192.168.XXX.XXX
 $ clear dns cache
 
 # 削除
-$ no dns static a gitlab.local 192.168.XXX.XXX
+$ no dns static a gitlab.private.example.co.jp 192.168.XXX.XXX
 ```
 
 ## L2TP/IPsec を使用した VPN 通信の構築
