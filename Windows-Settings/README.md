@@ -91,9 +91,8 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
 - - -
 
 ## MS IME
-- 編集操作
-  - 変更
-    - Ctrl + SPACE: `IME-オン/オフ`
+- 編集操作 変更
+  - 変換: `IME-オン/オフ` (初期段階で設定されていいる**変換を削除**してから)
 
 - - -
 
@@ -111,7 +110,10 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
 - ImTranslator
   - Select source language: `Japanese`
   - Select target  language: `English`
-  - Disable shortcuts other than `Inline Translator`
+  - Disable shortcuts other than Inline Translator
+  - Inline Translator shortcuts
+    - Translate with shortcut: `alt + c` -> `alt + x`
+    - Clear translation: disable
 - ~~Mouse Dictionary~~
 - ColorZilla
 - ColorPicker
