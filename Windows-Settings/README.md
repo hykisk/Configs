@@ -114,6 +114,8 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
   - Inline Translator shortcuts
     - Translate with shortcut: `alt + c` -> `alt + x`
     - Clear translation: disable
+  - Pop-up Bubble
+    - Show Translator's button second(s): `false`
 - ~~Mouse Dictionary~~
 - ColorZilla
 - ColorPicker
@@ -225,6 +227,18 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
 ## [SylphyHorn](Windows Store)
 
 - 仮想デスクトップ切り替え時のツールチップ表示のためだけに使用しているので、ショートカットキーはすべて削除する。
+
+- - -
+
+## [PuTTy](https://www.chiark.greenend.org.uk/%7Esgtatham/putty/latest.html)
+
+- - -
+
+## [WinSCP](https://ja.osdn.net/projects/winscp/)
+
+- 環境設定
+  - エディタ: `Sakura を一番上にする`
+  - パネル > 隠しファイルを表示する: `true`
 
 - - -
 
