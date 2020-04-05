@@ -139,6 +139,8 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
      - Scroll Right `ctrl + alt + j`
      - Scroll Left `ctrl + alt + k`
 - Open With
+- Personal Blocklist (not by Google)
+- Auto Reload Tab
 - Simple Tab Groups
   - Hotkeys
     - Open manage groups `ctrl + g`
