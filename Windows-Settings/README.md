@@ -260,6 +260,12 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
 
   ユーザーの構成 > 管理用テンプレート > デスクトップ > Aero Shakeのウィンドウ最小化のマウス ジェスチャをオフにする > `有効`
 
+- キーボードのリピート入力を高速
+  - Keyboard_Response.reg
+
+- マウスのスピード／マウスのスピードアップ閾値を調整
+  - Mouse.reg
+
 - - -
 
 ## win+r（起動アプリに登録） shell:startup
