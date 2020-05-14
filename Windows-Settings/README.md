@@ -66,13 +66,7 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
   値：<br>
   ```
   00 00 00 00 00 00 00 00
-  02 00 00 00 5B E0 7B 00 # muhenkan -> win
-  02 00 00 00 1D 00 3A 00 # capslock -> ctl
-  02 00 00 00 0E 00 2B 00 # backspace -> |
-  02 00 00 00 2B 00 0E 00 # | -> backspace
-  02 00 00 00 64 00 38 E0 # right-alt -> F13
-  02 00 00 00 4B E0 49 E0 # `Page Up` -> L Arrow
-  02 00 00 00 4D E0 51 E0 # `Page Down` -> R Arrow
+  02 00 00 00 64 00 38 E0 # キーマッピングを変更 右alt -> F13
   00 00 00 00
   ```
 
@@ -152,7 +146,7 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
     - Load last gropu `ctrl + alt + l`
 - New Tab Override
   - URL `https://www.google.com/`
-- Shortcuts
+- Shortkeys (Custom Keyboard Shortcuts) for Firefox
   - import
     ```
     [{"key":"ctrl+s","action":"searchgoogle","blacklist":false,"sites":"*mail.google.com*","open":false,"activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]},{"key":"ctrl+h","action":"disable","blacklist":false,"sites":"*mail.google.com*",    "open":false,"activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]},{"key":"ctrl+j","action":"disable","blacklist":false,"sites":"*mail.google.com*","open":false,"activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]},    {"key":"ctrl+p","action":"disable","blacklist":false,"sites":"*mail.google.com*","open":false,"activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]},{"key":"ctrl+n","action":"disable","blacklist":false,"sites":"*mail.google.com*","open":true,    "activeInInputs":true,"exported":true,"sitesArray":["*mail.google.com*"]}]
@@ -169,6 +163,13 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
 - - -
 
 ## [ScreenToGif](https://www.screentogif.com/)
+
+- Recorder
+  - Interface: `New`
+  - Other
+    - Use a pre start counddown: `3`
+- Shortcuts
+  - Screen recorder `ctrl + F7`
 
 - - -
 
