@@ -218,12 +218,14 @@ $ mklink "C:\Program Files\AutoHotkey\MySettingKey.ahk" "c:\work\Configs\Windows
 
 ## [QTranslate](http://quest-app.appspot.com/download)
 
-- ウィンドウスタイルを有効にする: `true`
-- テーマ: `PhotoShop Dark`
+- 外観
+  - ウィンドウスタイルを有効にする: `true`
+  - テーマ: `PhotoShop Dark`
 - Service: `Google` Uncheck otherwise
 - ホットキーのバッティングを回避
-  - メインウィンドウを表示する: `ctrl + shift + q`
+  - 辞書ウィンドウを表示する: `なし`
   - 選択したテキストを音声再生する: `なし`
+  - メインウィンドウを表示する: `ctrl + shift + q`
 
 - - -
 
@@ -267,7 +269,9 @@ $ mklink "C:\Program Files\AutoHotkey\MySettingKey.ahk" "c:\work\Configs\Windows
 - マウスのスピード／マウスのスピードアップ閾値を調整
   - Mouse.reg
 
-- 設定 > キーボードの詳細設定 > 絵文字の入力後に自動的にパネルを終了しない: `off`
+- 絵文字の入力後に自動でパネルを閉じる
+
+  設定 > キーボードの詳細設定 > 絵文字の入力後に自動的にパネルを終了しない: `off`
 
 - - -
 
