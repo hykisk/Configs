@@ -51,8 +51,8 @@
 - [AutoHotKey](https://www.autohotkey.com/)
 
 ```
-# cmd
-$ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-Settings\MySettingKey.ahk"
+# cmd with admin
+$ mklink "C:\Program Files\AutoHotkey\MySettingKey.ahk" "c:\work\Configs\Windows-Settings\MySettingKey.ahk"
 ```
 
 - - -
@@ -266,6 +266,8 @@ $ mklink C:\Program Files\AutoHotkey\MySettingKey.ahk "c:\work\Configs\Windows-S
 
 - マウスのスピード／マウスのスピードアップ閾値を調整
   - Mouse.reg
+
+- 設定 > キーボードの詳細設定 > 絵文字の入力後に自動的にパネルを終了しない: `off`
 
 - - -
 
