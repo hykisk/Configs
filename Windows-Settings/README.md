@@ -125,7 +125,7 @@ $ mklink "C:\Program Files\AutoHotkey\MySettingKey.ahk" "c:\work\Configs\Windows
 - ~~Google Translate for Selected Text~~
 - ~~SearchWP~~
   - CONTENT toc : `off -> on`
-- Nimbus Screen Capture: Screenshot, Edit, Annotate
+- ~~Nimbus Screen Capture: Screenshot, Edit, Annotate~~
   - Hotkeys Settings: all disable
 - Tab hider
 - Saka Key
@@ -244,6 +244,13 @@ $ mklink "C:\Program Files\AutoHotkey\MySettingKey.ahk" "c:\work\Configs\Windows
 - 環境設定
   - エディタ: `Sakura を一番上にする`
   - パネル > 隠しファイルを表示する: `true`
+
+- - -
+
+## [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
+
+- options > font
+  - `MeigyoKe_Gothic`, `9pt`
 
 - - -
 

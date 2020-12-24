@@ -20,25 +20,7 @@
 ## Color Scheme
 - - -
 
-- Pattern A: `regedit`
-  - [cmd-color-scheme.reg](./cmd-color-scheme.reg)
-  - ![color](./img/cmd-color-scheme.png)
-
-- Pattern B: `tool`
-1. https://github.com/Microsoft/console
-1. build on VS.
-
-  ```cmd
-  $ move -p C:\tools\ColorTool\ColorTool\bin\Release\colortool.exe C:\tools\ColorTool
-  $ move -p C:\tools\ColorTool\ColorTool\bin\Release\colortool.exe.config   C:\tools\ColorTool
-  $ C:\tools\ColorTool\colortool.exe solarized_dark
-  ```
-
-## Change cmd property
-- - -
-
-- property/default
-  - ![property](./img/cmd-buffer-size.png)
+base16-monokai.minttyrc
 
 ### Change the use repository of apt-get to Japanese server
 - - -

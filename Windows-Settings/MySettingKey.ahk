@@ -111,15 +111,18 @@ F13 & I::Send,{Blindk}#^{Left}
 F13 & O::Send,{Blind}#^{Right}
 #S::Send,{Blind}#^{Right}
 
-F13 & 1::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}
-F13 & 2::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}
-F13 & 3::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}#^{Right}
-F13 & 4::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}#^{Right}#^{Right}
-F13 & 5::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}#^{Right}#^{Right}#^{Right}
+F13 & 1::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}
+F13 & 2::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}
+F13 & 3::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}#^{Right}
+F13 & 4::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}#^{Right}#^{Right}
+F13 & 5::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}#^{Right}#^{Right}#^{Right}
+F13 & 6::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}
+F13 & 7::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}
+F13 & 8::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}
 ; move first desktop
 F13 & U::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}
 ; move last desktop
-;F13 & P::Send,{Blind}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}
+F13 & P::Send,{Blind}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}
 
 F13 & R::Return
 
