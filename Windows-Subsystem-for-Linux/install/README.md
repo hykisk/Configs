@@ -84,10 +84,12 @@ $ git update-index --assume-unchanged ./Windows-Subsystem-for-Linux/.gitconfig
 $ git update-index --assume-unchanged ./Windows-Subsystem-for-Linux/bin/winlxss.sh
 ```
 
-## zip, unzip
+## Others
+
 ```
 $ sudo apt -y install zip
 $ sudo apt -y install unzip
+$ sudo apt -y install tree
 ```
 
 ## Clipboard
