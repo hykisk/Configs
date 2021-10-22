@@ -85,9 +85,9 @@ F13 & S::Send,{Blind}^s
 F13 & X::Send,{Blind}^x
 F13 & V::Send,{Blind}+{Insert}
 !v::Send,+{Insert}
-F13 & C::Send,{Blind}^c
-F13 & Z::Send,{Blind}^z
-F13 & Y::Send,{Blind}^y
+; F13 & C::Send,{Blind}^c
+; F13 & Z::Send,{Blind}^z
+; F13 & Y::Send,{Blind}^y
 
 ; page up/down
 F13 & 9::Send,{Blind}{PgDn}
