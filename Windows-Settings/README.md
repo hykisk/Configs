@@ -90,12 +90,6 @@ $ mklink "C:\Program Files\AutoHotkey\MySettingKey.ahk" "c:\work\Configs\Windows
 
 - - -
 
-## MS IME
-- 編集操作 変更
-  - 変換: `IME-オン/オフ` (初期段階で設定されていいる**変換を削除**してから)
-
-- - -
-
 ## [Firefox](https://www.mozilla.org/ja/firefox/new/)
 - OPTION
   - General Language : `English`
