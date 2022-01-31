@@ -31,5 +31,5 @@
     editor = /usr/bin/vim
     pager = LESSCHARSET=utf-8 less -S
 [push]
-    default = simple
+    default = current
 

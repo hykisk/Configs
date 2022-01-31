@@ -21,12 +21,7 @@
 - Automatically distinguish character codes
 <br>"files.autoGuessEncoding": true
 
-- ~~Simbolic link~~ Use `Setting Sync`
-```cmd
-cd C:\Users\hykisk\AppData\Roaming\Code
-move .\User C:\Users\hykisk\Dropbox\21.Settings\VSCode\User
-mklink /D User "C:\Users\hykisk\Dropbox\21.Settings\VSCode\User"
-```
+- ~~Simbolic link~~ Use `Settings Sync`
 
 ## Resetting
 `commnad palette > Advanced Options > Edit Extension Local Settings`

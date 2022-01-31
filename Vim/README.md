@@ -12,21 +12,7 @@ $ cd /usr/local/src
 $ git clone https://github.com/vim/vim.git
 $ cd vim
 
-$ sudo apt-get -y install gcc-4.9
-$ sudo apt-get -y install autoconf
-$ sudo apt-get -y install automake
-$ sudo apt-get -y install make
-$ sudo apt-get -y install lua5.3
-$ sudo apt-get -y install luajit
-$ sudo apt-get -y install liblua5.3-0
-$ sudo apt-get -y install liblua5.3-dev
-$ sudo apt-get -y install libperl5.22
-$ sudo apt-get -y install libperl-dev
-$ sudo apt-get -y install libpython-dev
-$ sudo apt-get -y install python-dev
-$ sudo apt-get -y install python3-dev
-$ sudo apt-get -y install tcl
-$ sudo apt-get -y install tcl-dev
+$ sudo apt-get -y install gcc-4.9 autoconf automake make lua5.3 luajit liblua5.3-0 liblua5.3-dev libperl5.22 libperl-dev libpython-dev python-dev python3-dev tcl tcl-dev
 
 $ mkdir /usr/include/lua5.3/include
 $ cp -p /usr/include/lua5.3/*.h /usr/include/lua5.3/include/.

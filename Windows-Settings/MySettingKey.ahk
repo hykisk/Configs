@@ -106,10 +106,10 @@ F13 & `::Send,{Blind}!{F4}
 
 ; move active window to adjacent desktop
 F13 & I::Send,{Blindk}#^{Left}
-#A::Send,{Blind}#^{Left}
+;#A::Send,{Blind}#^{Left}
 
 F13 & O::Send,{Blind}#^{Right}
-#S::Send,{Blind}#^{Right}
+;#S::Send,{Blind}#^{Right}
 
 F13 & 1::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}
 F13 & 2::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Right}
@@ -124,7 +124,7 @@ F13 & U::Send,{Blind}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}#^{Left}
 ; move last desktop
 F13 & P::Send,{Blind}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}#^{Right}
 
-F13 & R::Return
+^space::Send,{Enter}
 
 ; disable narrator
 #N::Return

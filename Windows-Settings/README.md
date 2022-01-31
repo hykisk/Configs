@@ -56,6 +56,10 @@
 
 - [AutoHotKey](https://www.autohotkey.com/)
 
+- IME切り替え時の「あ」や「A」
+
+  IME右クリック > 設定 > 全般 > [以前のバージョンの Microsoft IME を使う] をオン
+
 ```
 # cmd with admin
 $ mklink "C:\Program Files\AutoHotkey\MySettingKey.ahk" "c:\work\Configs\Windows-Settings\MySettingKey.ahk"
@@ -153,9 +157,9 @@ $ mklink "C:\Program Files\AutoHotkey\MySettingKey.ahk" "c:\work\Configs\Windows
     ```
 - - -
 
-## [WSL Terminal](https://github.com/goreliu/wsl-terminal/releases)
+## [WSL Terminal](https://github.com/mskyaxl/wsl-terminal/releases)
 
-- looks -> Theme > `base16-darktooth.minttyrc` or `base16-materia.minttyrc`
+- looks -> Theme > `base16-darktooth.minttyrc` or `base16-materia.minttyrc` or `base16-monokai.minttyrc`
 - looks -> cursor > `線`
 - マウス > 右マウスボタン > `ペースト`
 - Font > `MeiryoKe_Console`

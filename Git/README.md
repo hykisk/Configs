@@ -3,13 +3,13 @@
 ```
 $ git config --global user.name "hisk"
 $ git config --global user.email hisk@xxx.xxx
-$ git config --global push.default simple
+$ git config --global push.default current
 ```
 
 ```
 $ git config --local user.name "hiroyuki-san"
 $ git config --local user.email "hiroyuki-san@xxx.xxx"
-$ git config --global push.default simple
+$ git config --global push.default current
 ```
 
 ## Add SSH Key
