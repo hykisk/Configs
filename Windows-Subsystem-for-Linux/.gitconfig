@@ -41,7 +41,7 @@
 	autoCRLF = false
 	quotepath = false
 [push]
-	default = simple
+	default = current
 
 [credential]
 	helper = /mnt/c/tools/Git/mingw64/libexec/git-core/git-credential-manager.exe
