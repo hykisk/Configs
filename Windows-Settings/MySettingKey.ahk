@@ -60,6 +60,56 @@ FastRight() {
   }
 }
 
+; excel
+YellowCell() {
+  Send,{Alt}
+  Sleep, 10
+  Send,{h}
+  Send,{h}
+  Loop, 6 {
+    Send,{Down}
+  }
+  Loop, 3 {
+    Send,{Right}
+  }
+  Send,{Enter}
+}
+
+; excel
+RedCell() {
+  Send,{Alt}
+  Sleep, 10
+  Send,{h}
+  Send,{h}
+  Loop, 6 {
+    Send,{Down}
+  }
+  Loop, 1 {
+    Send,{Right}
+  }
+  Send,{Enter}
+}
+
+; excel
+RedText() {
+  Send,{Alt}
+  Sleep, 10
+  Send,{h}
+  Send,{f}
+  Send,{c}
+  Loop, 7 {
+    Send,{Down}
+  }
+  Loop, 1 {
+    Send,{Right}
+  }
+  Send,{Enter}
+}
+
+F13 & Y::YellowCell()
+F13 & R::RedCell()
+F13 & X::RedText()
+
 F13 & H::Send,{Blind}{Left}
 F13 & J::Send,{Blind}{Down}
 F13 & K::Send,{Blind}{Up}
@@ -81,8 +131,6 @@ F13 & N::Send,{Blind}{Backspace}
 F13 & B::Send,{Blind}{Backspace}
 F13 & D::Send,{Blind}{Delete}
 F13 & Q::Send,{Blind}{Escape}
-F13 & S::Send,{Blind}^s
-F13 & X::Send,{Blind}^x
 F13 & V::Send,{Blind}+{Insert}
 !v::Send,+{Insert}
 ; F13 & C::Send,{Blind}^c
