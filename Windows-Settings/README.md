@@ -289,3 +289,14 @@ $ mklink "C:\Program Files\AutoHotkey\MySettingKey.ahk" "c:\work\Configs\Windows
 - meminfo.exe
 
 - - -
+
+## Google Chrome
+
+- isear
+https://chrome.google.com/webstore/detail/isear/cihgmhbajkkbciealhbbfhbbnmgaekdj?hl=ja
+
+- Google検索キーボードショートカット
+https://chrome.google.com/webstore/detail/google-search-results-sho/dchaandmcifgjemlhiekookpgjmkcelg?hl=ja
+
+- ブックマークサイドバー
+https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh?hl=ja
